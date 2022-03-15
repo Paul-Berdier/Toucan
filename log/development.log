@@ -6,3 +6,58 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 22ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 4713)
 
 
+Started GET "/" for ::1 at 2022-03-15 11:20:50 +0100
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/anatolethien/.rvm/gems/ruby-3.0.3/gems/railties-6.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/anatolethien/.rvm/gems/ruby-3.0.3/gems/railties-6.1.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.4ms | Allocations: 592)
+Completed 200 OK in 25ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 4712)
+
+
+Started GET "/" for ::1 at 2022-03-15 11:24:19 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 397)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/anatolethien/Documents/ruby-lab/toucan/public/packs
+[Webpacker] Hash: 2034dd941d5476d8645c
+Version: webpack 4.46.0
+Time: 2080ms
+Built at: 03/15/2022 11:24:24 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3dd0dc24d9c39bc09227.js    125 KiB  application  [emitted] [immutable]  application
+js/application-3dd0dc24d9c39bc09227.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3dd0dc24d9c39bc09227.js js/application-3dd0dc24d9c39bc09227.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 4666.3ms | Allocations: 15465)
+Completed 200 OK in 4676ms (Views: 4669.5ms | ActiveRecord: 0.0ms | Allocations: 18568)
+
+
+Started GET "/" for ::1 at 2022-03-15 11:24:36 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3549)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 4130)
+
+
+Started GET "/" for ::1 at 2022-03-15 11:24:41 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 43)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3400)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3849)
+
+
