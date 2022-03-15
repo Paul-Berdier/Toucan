@@ -61,3 +61,433 @@ Processing by HelloController#index as HTML
 Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3849)
 
 
+Started GET "/" for ::1 at 2022-03-15 11:50:10 +0100
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 527)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `exec': No such file or directory - C:\\Users\\DAM81\\OneDrive\\Bureau\\toucan\\node_modules\\.bin/webpack (Errno::ENOENT)
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `block in run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `chdir'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1717.8ms | Allocations: 30850)
+Completed 500 Internal Server Error in 1745ms (ActiveRecord: 0.0ms | Allocations: 34943)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-03-15 11:51:48 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 176)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `exec': No such file or directory - C:\\Users\\DAM81\\OneDrive\\Bureau\\toucan\\node_modules\\.bin/webpack (Errno::ENOENT)
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `block in run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `chdir'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1225.5ms | Allocations: 13655)
+Completed 500 Internal Server Error in 1238ms (ActiveRecord: 0.0ms | Allocations: 14861)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     # <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-03-15 11:52:05 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 174)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `exec': No such file or directory - C:\\Users\\DAM81\\OneDrive\\Bureau\\toucan\\node_modules\\.bin/webpack (Errno::ENOENT)
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `block in run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `chdir'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1193.6ms | Allocations: 13635)
+Completed 500 Internal Server Error in 1206ms (ActiveRecord: 0.0ms | Allocations: 14834)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     # <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     # <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-03-15 11:52:14 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 174)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `exec': No such file or directory - C:\\Users\\DAM81\\OneDrive\\Bureau\\toucan\\node_modules\\.bin/webpack (Errno::ENOENT)
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `block in run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `chdir'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1192.3ms | Allocations: 13278)
+Completed 500 Internal Server Error in 1211ms (ActiveRecord: 0.0ms | Allocations: 14477)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-03-15 11:58:10 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 722)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `exec': No such file or directory - C:\\Users\\DAM81\\OneDrive\\Bureau\\toucan\\node_modules\\.bin/webpack (Errno::ENOENT)
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `block in run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `chdir'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1191.5ms | Allocations: 18337)
+Completed 500 Internal Server Error in 1203ms (ActiveRecord: 0.0ms | Allocations: 22127)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-03-15 11:58:18 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 46)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `exec': No such file or directory - C:\\Users\\DAM81\\OneDrive\\Bureau\\toucan\\node_modules\\.bin/webpack (Errno::ENOENT)
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `block in run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `chdir'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1178.8ms | Allocations: 12843)
+Completed 500 Internal Server Error in 1180ms (ActiveRecord: 0.0ms | Allocations: 13289)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-03-15 12:02:30 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 423)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `exec': No such file or directory - C:\\Users\\DAM81\\OneDrive\\Bureau\\toucan\\node_modules\\.bin/webpack (Errno::ENOENT)
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `block in run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `chdir'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1316.3ms | Allocations: 17984)
+Completed 500 Internal Server Error in 1328ms (ActiveRecord: 0.0ms | Allocations: 21772)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-03-15 12:04:53 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 489)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs
+[Webpacker] Hash: 2034dd941d5476d8645c
+Version: webpack 4.46.0
+Time: 1559ms
+Built at: 15/03/2022 12:04:57
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3dd0dc24d9c39bc09227.js    125 KiB  application  [emitted] [immutable]  application
+js/application-3dd0dc24d9c39bc09227.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3dd0dc24d9c39bc09227.js js/application-3dd0dc24d9c39bc09227.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3923.9ms | Allocations: 37128)
+Completed 200 OK in 3938ms (Views: 3929.9ms | ActiveRecord: 0.0ms | Allocations: 40562)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:32 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 3615)
+Completed 200 OK in 70ms (Views: 68.9ms | ActiveRecord: 0.0ms | Allocations: 4219)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:33 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 3458)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.0ms | Allocations: 3929)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:34 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.5ms | Allocations: 3810)
+Completed 200 OK in 74ms (Views: 72.3ms | ActiveRecord: 0.0ms | Allocations: 4281)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:34 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.6ms | Allocations: 3456)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.0ms | Allocations: 3925)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:34 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 3540)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms | Allocations: 4009)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:34 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.5ms | Allocations: 5824)
+Completed 200 OK in 54ms (Views: 54.0ms | ActiveRecord: 0.0ms | Allocations: 6293)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:35 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 5267)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.0ms | Allocations: 5736)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:35 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 3815)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.0ms | Allocations: 4284)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:35 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 3537)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms | Allocations: 4024)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:35 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 3754)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.0ms | Allocations: 4240)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:06:42 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.1ms | Allocations: 3466)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.0ms | Allocations: 3938)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:07:16 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 179)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.7ms | Allocations: 4031)
+Completed 200 OK in 82ms (Views: 79.2ms | ActiveRecord: 0.0ms | Allocations: 5287)
+
+
