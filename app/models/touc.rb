@@ -1,0 +1,2 @@
+class Touc < ApplicationRecord
+end
