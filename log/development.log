@@ -506,3 +506,139 @@ Migrating to CreateToucs (20220321084228)
   [1m[36mTRANSACTION (7.4ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-03-21 09:47:22 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 976)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/public/packs
+[Webpacker] Hash: bee57a251308c78393c5
+Version: webpack 4.46.0
+Time: 3657ms
+Built at: 21/03/2022 09:47:32
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-de40139d376e62241b6d.js    125 KiB  application  [emitted] [immutable]  application
+js/application-de40139d376e62241b6d.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-de40139d376e62241b6d.js js/application-de40139d376e62241b6d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 9939.7ms | Allocations: 153442)
+Completed 200 OK in 10040ms (Views: 9988.3ms | ActiveRecord: 0.0ms | Allocations: 159419)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-22 08:51:46 +0100
+  [1m[35m (13.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant ToucController
+Did you mean?  ToucsController):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 08:52:53 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/toucs/index.html.erb:14
+  [1m[36mTouc Load (0.6ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 18.8ms | Allocations: 2123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 247.2ms | Allocations: 9659)
+Completed 200 OK in 317ms (Views: 256.2ms | ActiveRecord: 1.1ms | Allocations: 13034)
+
+
+Started GET "/toucs/new" for 127.0.0.1 at 2022-03-22 08:55:10 +0100
+Processing by ToucsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/new.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 315.6ms | Allocations: 10258)
+  Rendered toucs/new.html.erb within layouts/application (Duration: 325.3ms | Allocations: 10657)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 381.3ms | Allocations: 19278)
+Completed 200 OK in 401ms (Views: 382.9ms | ActiveRecord: 3.1ms | Allocations: 22981)
+
+
+Started POST "/toucs" for 127.0.0.1 at 2022-03-22 08:55:31 +0100
+Processing by ToucsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "touc"=>{"touc"=>"Salu toa"}, "commit"=>"Create Touc"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/toucs_controller.rb:27:in `block in create'
+  [1m[36mTouc Create (2.2ms)[0m  [1m[32mINSERT INTO "toucs" ("touc", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["touc", "Salu toa"], ["created_at", "2022-03-22 07:55:31.539830"], ["updated_at", "2022-03-22 07:55:31.539830"]]
+  ↳ app/controllers/toucs_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/toucs_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/toucs/1
+Completed 302 Found in 29ms (ActiveRecord: 9.8ms | Allocations: 3591)
+
+
+Started GET "/toucs/1" for 127.0.0.1 at 2022-03-22 08:55:31 +0100
+Processing by ToucsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/show.html.erb within layouts/application
+  Rendered toucs/show.html.erb within layouts/application (Duration: 9.2ms | Allocations: 331)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.5ms | Allocations: 4499)
+Completed 200 OK in 88ms (Views: 62.7ms | ActiveRecord: 0.4ms | Allocations: 6575)
+
+
+Started GET "/toucs/1/edit" for 127.0.0.1 at 2022-03-22 08:55:39 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 1.5ms | Allocations: 672)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 11.0ms | Allocations: 964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.5ms | Allocations: 4636)
+Completed 200 OK in 71ms (Views: 64.0ms | ActiveRecord: 0.3ms | Allocations: 5894)
+
+
+Started PATCH "/toucs/1" for 127.0.0.1 at 2022-03-22 08:55:41 +0100
+Processing by ToucsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "touc"=>{"touc"=>"Salu toa"}, "commit"=>"Update Touc", "id"=>"1"}
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+Redirected to http://127.0.0.1:3000/toucs/1
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms | Allocations: 1268)
+
+
+Started GET "/toucs/1" for 127.0.0.1 at 2022-03-22 08:55:41 +0100
+Processing by ToucsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/show.html.erb within layouts/application
+  Rendered toucs/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.1ms | Allocations: 4101)
+Completed 200 OK in 76ms (Views: 72.4ms | ActiveRecord: 0.3ms | Allocations: 5161)
+
+
+Started GET "/toucs/1/edit" for 127.0.0.1 at 2022-03-22 08:55:43 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 2.3ms | Allocations: 567)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 3.5ms | Allocations: 713)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 4307)
+Completed 200 OK in 73ms (Views: 67.8ms | ActiveRecord: 0.5ms | Allocations: 5440)
+
+
