@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e17ddf2-afa5-4b1c-a8f4-8fed5445e5c4" name="Changes" comment="change:path:css/html">
+    <list default="true" id="0e17ddf2-afa5-4b1c-a8f4-8fed5445e5c4" name="Changes" comment="install:app/depend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +45,7 @@
       <workItem from="1647339480095" duration="3670000" />
       <workItem from="1647851851989" duration="107000" />
       <workItem from="1647851987173" duration="4514000" />
-      <workItem from="1647938631897" duration="2956000" />
+      <workItem from="1647938631897" duration="4648000" />
     </task>
     <task id="LOCAL-00001" summary="webmoncul">
       <created>1647343619468</created>
@@ -85,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647939500483</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="install:app/depend">
+      <created>1647942101044</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647942101044</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +111,7 @@
     <MESSAGE value="scaffold" />
     <MESSAGE value="init:guard" />
     <MESSAGE value="change:path:css/html" />
-    <option name="LAST_COMMIT_MESSAGE" value="change:path:css/html" />
+    <MESSAGE value="install:app/depend" />
+    <option name="LAST_COMMIT_MESSAGE" value="install:app/depend" />
   </component>
 </project>
