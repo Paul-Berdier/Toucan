@@ -642,3 +642,39 @@ Processing by ToucsController#edit as HTML
 Completed 200 OK in 73ms (Views: 67.8ms | ActiveRecord: 0.5ms | Allocations: 5440)
 
 
+Started GET "/toucs/1/edit" for 127.0.0.1 at 2022-03-22 09:48:16 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 35.6ms | Allocations: 13856)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 44.9ms | Allocations: 14998)
+  Rendered layout layouts/application.html.erb (Duration: 1512.4ms | Allocations: 76586)
+Completed 500 Internal Server Error in 1563ms (ActiveRecord: 1.9ms | Allocations: 86241)
+
+
+
+Errno::EACCES - Permission denied @ apply2files - C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/Hw/HwxoOa4JJlBrjSBQ7NXG0T-zjLkaf9hnPK5WML9whHM.cache.14480.11912.817362:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/e5b19560bdd71fd6/variables" for 127.0.0.1 at 2022-03-22 09:48:18 +0100
+Started GET "/toucs/1/edit" for 127.0.0.1 at 2022-03-22 09:57:14 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 20.2ms | Allocations: 7917)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 25.4ms | Allocations: 8896)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2212.3ms | Allocations: 130782)
+Completed 200 OK in 2252ms (Views: 2222.4ms | ActiveRecord: 3.8ms | Allocations: 140469)
+
+

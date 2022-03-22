@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e17ddf2-afa5-4b1c-a8f4-8fed5445e5c4" name="Changes" comment="scaffold">
+    <list default="true" id="0e17ddf2-afa5-4b1c-a8f4-8fed5445e5c4" name="Changes" comment="init:guard">
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/hello.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +49,8 @@
       <updated>1647339478859</updated>
       <workItem from="1647339480095" duration="3670000" />
       <workItem from="1647851851989" duration="107000" />
-      <workItem from="1647851987173" duration="3976000" />
+      <workItem from="1647851987173" duration="4514000" />
+      <workItem from="1647938631897" duration="591000" />
     </task>
     <task id="LOCAL-00001" summary="webmoncul">
       <created>1647343619468</created>
@@ -64,7 +66,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647852393578</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init:guard">
+      <created>1647938059067</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647938059067</updated>
+    </task>
+    <task id="LOCAL-00004" summary="init:guard">
+      <created>1647938213958</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1647938213958</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +100,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="webmoncul" />
     <MESSAGE value="scaffold" />
-    <option name="LAST_COMMIT_MESSAGE" value="scaffold" />
+    <MESSAGE value="init:guard" />
+    <option name="LAST_COMMIT_MESSAGE" value="init:guard" />
   </component>
 </project>
