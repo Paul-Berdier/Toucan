@@ -801,3 +801,332 @@ ActiveRecord::RecordNotFound - Couldn't find Touc with 'id'=newjyhgjk:
   app/controllers/toucs_controller.rb:63:in `set_touc'
 
 Started POST "/__better_errors/8c8cd949c3a48f26/variables" for 127.0.0.1 at 2022-03-22 11:23:36 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-22 11:34:36 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 20.0ms | Allocations: 4485)
+  Rendered layout layouts/application.html.erb (Duration: 1738.5ms | Allocations: 108514)
+Completed 500 Internal Server Error in 1787ms (ActiveRecord: 3.4ms | Allocations: 113288)
+
+
+
+Errno::EACCES - Permission denied @ apply2files - C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/3U/3UCQR8cc5yIuRdQ4BMBYf1L92Y7J7_tyzfn64CAumJ0.cache.15540.12248.845473:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/caab599fefb5fa05/variables" for 127.0.0.1 at 2022-03-22 11:34:39 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-22 11:43:05 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/toucs/index.html.erb:14
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1755)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1161.7ms | Allocations: 112007)
+Completed 200 OK in 1164ms (Views: 1163.0ms | ActiveRecord: 0.8ms | Allocations: 112651)
+
+
+Started GET "/toucs/1" for 127.0.0.1 at 2022-03-22 11:43:21 +0100
+Processing by ToucsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/show.html.erb within layouts/application
+  Rendered toucs/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 279)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 98.9ms | Allocations: 23567)
+Completed 200 OK in 108ms (Views: 100.2ms | ActiveRecord: 0.4ms | Allocations: 26025)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-22 11:47:22 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 82.2ms | Allocations: 9858)
+Completed 200 OK in 100ms (Views: 93.8ms | ActiveRecord: 0.4ms | Allocations: 11518)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:03:10 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/toucs/index.html.erb:14
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2057)
+  Rendered layout layouts/application.html.erb (Duration: 1053.4ms | Allocations: 67190)
+Completed 500 Internal Server Error in 1072ms (ActiveRecord: 1.1ms | Allocations: 68817)
+
+
+
+Errno::EACCES - Permission denied @ apply2files - C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/3e/3eYsPV1EwRtj99as2-1DuOQGevGiQD6xdDu4ZQH6tGc.cache.18560.12248.644110:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/fdf6438f9e85719a/variables" for 127.0.0.1 at 2022-03-22 12:03:11 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:03:27 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 958)
+  Rendered layout layouts/application.html.erb (Duration: 883.4ms | Allocations: 64017)
+Completed 500 Internal Server Error in 886ms (ActiveRecord: 0.3ms | Allocations: 64803)
+
+
+
+Errno::EACCES - Permission denied @ apply2files - C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/3e/3eYsPV1EwRtj99as2-1DuOQGevGiQD6xdDu4ZQH6tGc.cache.19460.12248.323055:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/2f6b5acb005c8229/variables" for 127.0.0.1 at 2022-03-22 12:03:28 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:03:32 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.6ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 951)
+  Rendered layout layouts/application.html.erb (Duration: 888.5ms | Allocations: 64634)
+Completed 500 Internal Server Error in 891ms (ActiveRecord: 0.6ms | Allocations: 65352)
+
+
+
+Errno::EACCES - Permission denied @ apply2files - C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/3e/3eYsPV1EwRtj99as2-1DuOQGevGiQD6xdDu4ZQH6tGc.cache.15540.12248.989590:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/18da66d00a7ee532/variables" for 127.0.0.1 at 2022-03-22 12:03:33 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:04:19 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.6ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 4919)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2612.0ms | Allocations: 178956)
+Completed 200 OK in 2654ms (Views: 2630.2ms | ActiveRecord: 1.8ms | Allocations: 185717)
+
+
+Started GET "/app/assets/images/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:04:22 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:05:47 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 91.0ms | Allocations: 9877)
+Completed 200 OK in 108ms (Views: 104.5ms | ActiveRecord: 0.3ms | Allocations: 11455)
+
+
+Started GET "/app/assets/images/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:05:47 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:07:24 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 88.1ms | Allocations: 9873)
+Completed 200 OK in 102ms (Views: 97.8ms | ActiveRecord: 0.3ms | Allocations: 11353)
+
+
+Started GET "/app/assets/images/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:07:24 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:07:41 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 103.1ms | Allocations: 9875)
+Completed 200 OK in 116ms (Views: 111.9ms | ActiveRecord: 0.4ms | Allocations: 11361)
+
+
+Started GET "/app/assets/images/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:07:41 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:09:32 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 20.5ms | Allocations: 1262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 123.1ms | Allocations: 9865)
+Completed 200 OK in 155ms (Views: 150.5ms | ActiveRecord: 0.3ms | Allocations: 11335)
+
+
+Started GET "/app/assets/images/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:09:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:10:48 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 91.3ms | Allocations: 10899)
+Completed 200 OK in 104ms (Views: 99.6ms | ActiveRecord: 0.5ms | Allocations: 12369)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:12:16 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 85.2ms | Allocations: 9869)
+Completed 200 OK in 99ms (Views: 94.5ms | ActiveRecord: 0.3ms | Allocations: 11355)
+
+
+Started GET "/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:12:17 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:13:15 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 828)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2264.5ms | Allocations: 133659)
+Completed 200 OK in 2266ms (Views: 2265.3ms | ActiveRecord: 0.3ms | Allocations: 134174)
+
+
+Started GET "/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:13:17 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:13:32 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 98.7ms | Allocations: 10257)
+Completed 200 OK in 114ms (Views: 110.2ms | ActiveRecord: 0.3ms | Allocations: 11704)
+
+
+Started GET "/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:13:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:13:37 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 828)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 100.7ms | Allocations: 16470)
+Completed 200 OK in 103ms (Views: 101.7ms | ActiveRecord: 0.3ms | Allocations: 16984)
+
+
+Started GET "/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:13:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:14:03 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 4510)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 563.7ms | Allocations: 58363)
+Completed 200 OK in 601ms (Views: 579.0ms | ActiveRecord: 1.9ms | Allocations: 64523)
+
+
+Started GET "/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:14:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:17:33 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1662)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 97.7ms | Allocations: 21912)
+Completed 200 OK in 113ms (Views: 109.3ms | ActiveRecord: 0.3ms | Allocations: 25433)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:19:20 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 4515)
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:19:21 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/toucs/index.html.erb:14
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1690)
+  Rendered layout layouts/application.html.erb (Duration: 1635.4ms | Allocations: 122641)
+Completed 500 Internal Server Error in 1676ms (ActiveRecord: 1.4ms | Allocations: 128533)
+
+
+
+Errno::EACCES - Permission denied @ rb_file_s_rename - (C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/jy/jy2Wsd5tXFhVn4Iu6G29lsJLolyq1hdLxFI6BxpWXgk.cache.15540.10288.569309, C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/jy/jy2Wsd5tXFhVn4Iu6G29lsJLolyq1hdLxFI6BxpWXgk.cache):
+  app/views/layouts/application.html.erb:9
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2546.0ms | Allocations: 194053)
+Completed 200 OK in 2548ms (Views: 2546.3ms | ActiveRecord: 0.8ms | Allocations: 194714)
+
+
