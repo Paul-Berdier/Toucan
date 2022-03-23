@@ -26,7 +26,7 @@ class ToucsController < ApplicationController
 
     respond_to do |format|
       if @touc.save
-        format.html { redirect_to touc_url(@touc), notice: "Touc was successfully created." }
+        format.html { redirect_to root_path, notice: "Touc was successfully created." }
         format.json { render :show, status: :created, location: @touc }
       else
         format.html { render :new, status: :unprocessable_entity }

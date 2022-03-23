@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e17ddf2-afa5-4b1c-a8f4-8fed5445e5c4" name="Changes" comment="init:feed+follow">
-      <change afterPath="$PROJECT_DIR$/app/views/toucs/_trends.html.erb" afterDir="false" />
+    <list default="true" id="0e17ddf2-afa5-4b1c-a8f4-8fed5445e5c4" name="Changes" comment="page finish">
+      <change afterPath="$PROJECT_DIR$/app/assets/images/toucan_logo.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/toucan_logjpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/hello_controller.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/toucs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/toucs_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/toucs/_feed.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/toucs/_feed.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/toucs/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/toucs/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/toucs/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/toucs/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/hello/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
