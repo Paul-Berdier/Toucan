@@ -4,6 +4,7 @@ class ToucsController < ApplicationController
   # GET /toucs or /toucs.json
   def index
     @toucs = Touc.all.order("created_at DESC")
+    @touc = Touc.new
   end
 
   # GET /toucs/1 or /toucs/1.json
