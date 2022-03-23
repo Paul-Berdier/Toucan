@@ -6,3 +6,1657 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 22ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 4713)
 
 
+Started GET "/" for ::1 at 2022-03-15 11:20:50 +0100
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/anatolethien/.rvm/gems/ruby-3.0.3/gems/railties-6.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/anatolethien/.rvm/gems/ruby-3.0.3/gems/railties-6.1.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.4ms | Allocations: 592)
+Completed 200 OK in 25ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 4712)
+
+
+Started GET "/" for ::1 at 2022-03-15 11:24:19 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 397)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/anatolethien/Documents/ruby-lab/toucan/public/packs
+[Webpacker] Hash: 2034dd941d5476d8645c
+Version: webpack 4.46.0
+Time: 2080ms
+Built at: 03/15/2022 11:24:24 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3dd0dc24d9c39bc09227.js    125 KiB  application  [emitted] [immutable]  application
+js/application-3dd0dc24d9c39bc09227.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3dd0dc24d9c39bc09227.js js/application-3dd0dc24d9c39bc09227.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 4666.3ms | Allocations: 15465)
+Completed 200 OK in 4676ms (Views: 4669.5ms | ActiveRecord: 0.0ms | Allocations: 18568)
+
+
+Started GET "/" for ::1 at 2022-03-15 11:24:36 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 51)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3549)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 4130)
+
+
+Started GET "/" for ::1 at 2022-03-15 11:24:41 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 43)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3400)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3849)
+
+
+Started GET "/" for ::1 at 2022-03-15 11:50:10 +0100
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 527)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `exec': No such file or directory - C:\\Users\\DAM81\\OneDrive\\Bureau\\toucan\\node_modules\\.bin/webpack (Errno::ENOENT)
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `block in run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `chdir'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1717.8ms | Allocations: 30850)
+Completed 500 Internal Server Error in 1745ms (ActiveRecord: 0.0ms | Allocations: 34943)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-03-15 11:51:48 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 176)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `exec': No such file or directory - C:\\Users\\DAM81\\OneDrive\\Bureau\\toucan\\node_modules\\.bin/webpack (Errno::ENOENT)
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `block in run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `chdir'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1225.5ms | Allocations: 13655)
+Completed 500 Internal Server Error in 1238ms (ActiveRecord: 0.0ms | Allocations: 14861)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     # <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-03-15 11:52:05 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 174)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `exec': No such file or directory - C:\\Users\\DAM81\\OneDrive\\Bureau\\toucan\\node_modules\\.bin/webpack (Errno::ENOENT)
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `block in run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `chdir'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1193.6ms | Allocations: 13635)
+Completed 500 Internal Server Error in 1206ms (ActiveRecord: 0.0ms | Allocations: 14834)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     # <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     # <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-03-15 11:52:14 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 174)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `exec': No such file or directory - C:\\Users\\DAM81\\OneDrive\\Bureau\\toucan\\node_modules\\.bin/webpack (Errno::ENOENT)
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `block in run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `chdir'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1192.3ms | Allocations: 13278)
+Completed 500 Internal Server Error in 1211ms (ActiveRecord: 0.0ms | Allocations: 14477)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-03-15 11:58:10 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 722)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `exec': No such file or directory - C:\\Users\\DAM81\\OneDrive\\Bureau\\toucan\\node_modules\\.bin/webpack (Errno::ENOENT)
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `block in run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `chdir'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1191.5ms | Allocations: 18337)
+Completed 500 Internal Server Error in 1203ms (ActiveRecord: 0.0ms | Allocations: 22127)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-03-15 11:58:18 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 46)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `exec': No such file or directory - C:\\Users\\DAM81\\OneDrive\\Bureau\\toucan\\node_modules\\.bin/webpack (Errno::ENOENT)
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `block in run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `chdir'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1178.8ms | Allocations: 12843)
+Completed 500 Internal Server Error in 1180ms (ActiveRecord: 0.0ms | Allocations: 13289)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-03-15 12:02:30 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 423)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `exec': No such file or directory - C:\\Users\\DAM81\\OneDrive\\Bureau\\toucan\\node_modules\\.bin/webpack (Errno::ENOENT)
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:23:in `block in run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `chdir'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/webpack_runner.rb:22:in `run'
+	from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1316.3ms | Allocations: 17984)
+Completed 500 Internal Server Error in 1328ms (ActiveRecord: 0.0ms | Allocations: 21772)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-03-15 12:04:53 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 489)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/DAM81/OneDrive/Bureau/toucan/public/packs
+[Webpacker] Hash: 2034dd941d5476d8645c
+Version: webpack 4.46.0
+Time: 1559ms
+Built at: 15/03/2022 12:04:57
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3dd0dc24d9c39bc09227.js    125 KiB  application  [emitted] [immutable]  application
+js/application-3dd0dc24d9c39bc09227.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3dd0dc24d9c39bc09227.js js/application-3dd0dc24d9c39bc09227.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3923.9ms | Allocations: 37128)
+Completed 200 OK in 3938ms (Views: 3929.9ms | ActiveRecord: 0.0ms | Allocations: 40562)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:32 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 3615)
+Completed 200 OK in 70ms (Views: 68.9ms | ActiveRecord: 0.0ms | Allocations: 4219)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:33 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 3458)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.0ms | Allocations: 3929)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:34 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.5ms | Allocations: 3810)
+Completed 200 OK in 74ms (Views: 72.3ms | ActiveRecord: 0.0ms | Allocations: 4281)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:34 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.6ms | Allocations: 3456)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.0ms | Allocations: 3925)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:34 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 3540)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms | Allocations: 4009)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:34 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.5ms | Allocations: 5824)
+Completed 200 OK in 54ms (Views: 54.0ms | ActiveRecord: 0.0ms | Allocations: 6293)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:35 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 5267)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.0ms | Allocations: 5736)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:35 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 3815)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.0ms | Allocations: 4284)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:35 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 3537)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms | Allocations: 4024)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:05:35 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 3754)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.0ms | Allocations: 4240)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:06:42 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.1ms | Allocations: 3466)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.0ms | Allocations: 3938)
+
+
+Started GET "/" for ::1 at 2022-03-15 12:07:16 +0100
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 179)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.7ms | Allocations: 4031)
+Completed 200 OK in 82ms (Views: 79.2ms | ActiveRecord: 0.0ms | Allocations: 5287)
+
+
+  [1m[35m (12.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (10.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateToucs (20220321084228)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "toucs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "touc" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220321084228"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-03-21 08:45:20.403253"], ["updated_at", "2022-03-21 08:45:20.403253"]]
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-03-21 09:47:22 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 976)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/public/packs
+[Webpacker] Hash: bee57a251308c78393c5
+Version: webpack 4.46.0
+Time: 3657ms
+Built at: 21/03/2022 09:47:32
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-de40139d376e62241b6d.js    125 KiB  application  [emitted] [immutable]  application
+js/application-de40139d376e62241b6d.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-de40139d376e62241b6d.js js/application-de40139d376e62241b6d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 9939.7ms | Allocations: 153442)
+Completed 200 OK in 10040ms (Views: 9988.3ms | ActiveRecord: 0.0ms | Allocations: 159419)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-22 08:51:46 +0100
+  [1m[35m (13.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant ToucController
+Did you mean?  ToucsController):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 08:52:53 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/toucs/index.html.erb:14
+  [1m[36mTouc Load (0.6ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 18.8ms | Allocations: 2123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 247.2ms | Allocations: 9659)
+Completed 200 OK in 317ms (Views: 256.2ms | ActiveRecord: 1.1ms | Allocations: 13034)
+
+
+Started GET "/toucs/new" for 127.0.0.1 at 2022-03-22 08:55:10 +0100
+Processing by ToucsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/new.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 315.6ms | Allocations: 10258)
+  Rendered toucs/new.html.erb within layouts/application (Duration: 325.3ms | Allocations: 10657)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 381.3ms | Allocations: 19278)
+Completed 200 OK in 401ms (Views: 382.9ms | ActiveRecord: 3.1ms | Allocations: 22981)
+
+
+Started POST "/toucs" for 127.0.0.1 at 2022-03-22 08:55:31 +0100
+Processing by ToucsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "touc"=>{"touc"=>"Salu toa"}, "commit"=>"Create Touc"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/toucs_controller.rb:27:in `block in create'
+  [1m[36mTouc Create (2.2ms)[0m  [1m[32mINSERT INTO "toucs" ("touc", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["touc", "Salu toa"], ["created_at", "2022-03-22 07:55:31.539830"], ["updated_at", "2022-03-22 07:55:31.539830"]]
+  ↳ app/controllers/toucs_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/toucs_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/toucs/1
+Completed 302 Found in 29ms (ActiveRecord: 9.8ms | Allocations: 3591)
+
+
+Started GET "/toucs/1" for 127.0.0.1 at 2022-03-22 08:55:31 +0100
+Processing by ToucsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/show.html.erb within layouts/application
+  Rendered toucs/show.html.erb within layouts/application (Duration: 9.2ms | Allocations: 331)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.5ms | Allocations: 4499)
+Completed 200 OK in 88ms (Views: 62.7ms | ActiveRecord: 0.4ms | Allocations: 6575)
+
+
+Started GET "/toucs/1/edit" for 127.0.0.1 at 2022-03-22 08:55:39 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 1.5ms | Allocations: 672)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 11.0ms | Allocations: 964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.5ms | Allocations: 4636)
+Completed 200 OK in 71ms (Views: 64.0ms | ActiveRecord: 0.3ms | Allocations: 5894)
+
+
+Started PATCH "/toucs/1" for 127.0.0.1 at 2022-03-22 08:55:41 +0100
+Processing by ToucsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "touc"=>{"touc"=>"Salu toa"}, "commit"=>"Update Touc", "id"=>"1"}
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+Redirected to http://127.0.0.1:3000/toucs/1
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms | Allocations: 1268)
+
+
+Started GET "/toucs/1" for 127.0.0.1 at 2022-03-22 08:55:41 +0100
+Processing by ToucsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/show.html.erb within layouts/application
+  Rendered toucs/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.1ms | Allocations: 4101)
+Completed 200 OK in 76ms (Views: 72.4ms | ActiveRecord: 0.3ms | Allocations: 5161)
+
+
+Started GET "/toucs/1/edit" for 127.0.0.1 at 2022-03-22 08:55:43 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 2.3ms | Allocations: 567)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 3.5ms | Allocations: 713)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 4307)
+Completed 200 OK in 73ms (Views: 67.8ms | ActiveRecord: 0.5ms | Allocations: 5440)
+
+
+Started GET "/toucs/1/edit" for 127.0.0.1 at 2022-03-22 09:48:16 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 35.6ms | Allocations: 13856)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 44.9ms | Allocations: 14998)
+  Rendered layout layouts/application.html.erb (Duration: 1512.4ms | Allocations: 76586)
+Completed 500 Internal Server Error in 1563ms (ActiveRecord: 1.9ms | Allocations: 86241)
+
+
+
+Errno::EACCES - Permission denied @ apply2files - C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/Hw/HwxoOa4JJlBrjSBQ7NXG0T-zjLkaf9hnPK5WML9whHM.cache.14480.11912.817362:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/e5b19560bdd71fd6/variables" for 127.0.0.1 at 2022-03-22 09:48:18 +0100
+Started GET "/toucs/1/edit" for 127.0.0.1 at 2022-03-22 09:57:14 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 20.2ms | Allocations: 7917)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 25.4ms | Allocations: 8896)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2212.3ms | Allocations: 130782)
+Completed 200 OK in 2252ms (Views: 2222.4ms | ActiveRecord: 3.8ms | Allocations: 140469)
+
+
+Started GET "/toucs/1/edit" for 127.0.0.1 at 2022-03-22 10:44:39 +0100
+  [1m[35m (13.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.6ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 223.2ms | Allocations: 24679)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 248.7ms | Allocations: 26191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1030.4ms | Allocations: 51628)
+Completed 200 OK in 1217ms (Views: 1080.1ms | ActiveRecord: 2.4ms | Allocations: 63068)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-22 10:44:53 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 15.2ms | Allocations: 1279)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.3ms | Allocations: 27350)
+Completed 200 OK in 101ms (Views: 97.2ms | ActiveRecord: 0.4ms | Allocations: 28130)
+
+
+Started GET "/toucs/1" for 127.0.0.1 at 2022-03-22 11:14:51 +0100
+Processing by ToucsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/show.html.erb within layouts/application
+  Rendered toucs/show.html.erb within layouts/application (Duration: 10.4ms | Allocations: 4002)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 95.0ms | Allocations: 13835)
+Completed 200 OK in 119ms (Views: 105.8ms | ActiveRecord: 1.1ms | Allocations: 19003)
+
+
+Started GET "/toucs/1/edit" for 127.0.0.1 at 2022-03-22 11:14:58 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 2.4ms | Allocations: 889)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1301)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 92.9ms | Allocations: 16945)
+Completed 200 OK in 101ms (Views: 94.5ms | ActiveRecord: 0.4ms | Allocations: 18372)
+
+
+Started PATCH "/toucs/1" for 127.0.0.1 at 2022-03-22 11:15:09 +0100
+Processing by ToucsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "touc"=>{"touc"=>"Salu toa toa salu\r\n"}, "commit"=>"Update Touc", "id"=>"1"}
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/toucs_controller.rb:40:in `block in update'
+  [1m[36mTouc Update (1.8ms)[0m  [1m[33mUPDATE "toucs" SET "touc" = ?, "updated_at" = ? WHERE "toucs"."id" = ?[0m  [["touc", "Salu toa toa salu\r\n"], ["updated_at", "2022-03-22 10:15:09.607299"], ["id", 1]]
+  ↳ app/controllers/toucs_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (33.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/toucs_controller.rb:40:in `block in update'
+Redirected to http://127.0.0.1:3000/toucs/1
+Completed 302 Found in 51ms (ActiveRecord: 35.2ms | Allocations: 4213)
+
+
+Started GET "/toucs/1" for 127.0.0.1 at 2022-03-22 11:15:09 +0100
+Processing by ToucsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/show.html.erb within layouts/application
+  Rendered toucs/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 78)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 83.7ms | Allocations: 8061)
+Completed 200 OK in 89ms (Views: 84.8ms | ActiveRecord: 0.4ms | Allocations: 9137)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-22 11:15:15 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1542)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 98.6ms | Allocations: 24443)
+Completed 200 OK in 105ms (Views: 99.6ms | ActiveRecord: 0.3ms | Allocations: 25716)
+
+
+Started GET "/toucs/new" for 127.0.0.1 at 2022-03-22 11:15:21 +0100
+Processing by ToucsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/new.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 1.1ms | Allocations: 526)
+  Rendered toucs/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 836)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 98.0ms | Allocations: 9825)
+Completed 200 OK in 103ms (Views: 99.3ms | ActiveRecord: 0.0ms | Allocations: 10489)
+
+
+Started GET "/toucs/newjyhgjk" for 127.0.0.1 at 2022-03-22 11:23:36 +0100
+Processing by ToucsController#show as HTML
+  Parameters: {"id"=>"newjyhgjk"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+Completed 404 Not Found in 7ms (ActiveRecord: 0.8ms | Allocations: 2761)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Touc with 'id'=newjyhgjk:
+  app/controllers/toucs_controller.rb:63:in `set_touc'
+
+Started POST "/__better_errors/8c8cd949c3a48f26/variables" for 127.0.0.1 at 2022-03-22 11:23:36 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-22 11:34:36 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 20.0ms | Allocations: 4485)
+  Rendered layout layouts/application.html.erb (Duration: 1738.5ms | Allocations: 108514)
+Completed 500 Internal Server Error in 1787ms (ActiveRecord: 3.4ms | Allocations: 113288)
+
+
+
+Errno::EACCES - Permission denied @ apply2files - C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/3U/3UCQR8cc5yIuRdQ4BMBYf1L92Y7J7_tyzfn64CAumJ0.cache.15540.12248.845473:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/caab599fefb5fa05/variables" for 127.0.0.1 at 2022-03-22 11:34:39 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-22 11:43:05 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/toucs/index.html.erb:14
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1755)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1161.7ms | Allocations: 112007)
+Completed 200 OK in 1164ms (Views: 1163.0ms | ActiveRecord: 0.8ms | Allocations: 112651)
+
+
+Started GET "/toucs/1" for 127.0.0.1 at 2022-03-22 11:43:21 +0100
+Processing by ToucsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/show.html.erb within layouts/application
+  Rendered toucs/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 279)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 98.9ms | Allocations: 23567)
+Completed 200 OK in 108ms (Views: 100.2ms | ActiveRecord: 0.4ms | Allocations: 26025)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-22 11:47:22 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 82.2ms | Allocations: 9858)
+Completed 200 OK in 100ms (Views: 93.8ms | ActiveRecord: 0.4ms | Allocations: 11518)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:03:10 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/toucs/index.html.erb:14
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2057)
+  Rendered layout layouts/application.html.erb (Duration: 1053.4ms | Allocations: 67190)
+Completed 500 Internal Server Error in 1072ms (ActiveRecord: 1.1ms | Allocations: 68817)
+
+
+
+Errno::EACCES - Permission denied @ apply2files - C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/3e/3eYsPV1EwRtj99as2-1DuOQGevGiQD6xdDu4ZQH6tGc.cache.18560.12248.644110:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/fdf6438f9e85719a/variables" for 127.0.0.1 at 2022-03-22 12:03:11 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:03:27 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 958)
+  Rendered layout layouts/application.html.erb (Duration: 883.4ms | Allocations: 64017)
+Completed 500 Internal Server Error in 886ms (ActiveRecord: 0.3ms | Allocations: 64803)
+
+
+
+Errno::EACCES - Permission denied @ apply2files - C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/3e/3eYsPV1EwRtj99as2-1DuOQGevGiQD6xdDu4ZQH6tGc.cache.19460.12248.323055:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/2f6b5acb005c8229/variables" for 127.0.0.1 at 2022-03-22 12:03:28 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:03:32 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.6ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 951)
+  Rendered layout layouts/application.html.erb (Duration: 888.5ms | Allocations: 64634)
+Completed 500 Internal Server Error in 891ms (ActiveRecord: 0.6ms | Allocations: 65352)
+
+
+
+Errno::EACCES - Permission denied @ apply2files - C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/3e/3eYsPV1EwRtj99as2-1DuOQGevGiQD6xdDu4ZQH6tGc.cache.15540.12248.989590:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/18da66d00a7ee532/variables" for 127.0.0.1 at 2022-03-22 12:03:33 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:04:19 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.6ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 4919)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2612.0ms | Allocations: 178956)
+Completed 200 OK in 2654ms (Views: 2630.2ms | ActiveRecord: 1.8ms | Allocations: 185717)
+
+
+Started GET "/app/assets/images/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:04:22 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:05:47 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 91.0ms | Allocations: 9877)
+Completed 200 OK in 108ms (Views: 104.5ms | ActiveRecord: 0.3ms | Allocations: 11455)
+
+
+Started GET "/app/assets/images/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:05:47 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:07:24 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 88.1ms | Allocations: 9873)
+Completed 200 OK in 102ms (Views: 97.8ms | ActiveRecord: 0.3ms | Allocations: 11353)
+
+
+Started GET "/app/assets/images/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:07:24 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:07:41 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 103.1ms | Allocations: 9875)
+Completed 200 OK in 116ms (Views: 111.9ms | ActiveRecord: 0.4ms | Allocations: 11361)
+
+
+Started GET "/app/assets/images/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:07:41 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:09:32 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 20.5ms | Allocations: 1262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 123.1ms | Allocations: 9865)
+Completed 200 OK in 155ms (Views: 150.5ms | ActiveRecord: 0.3ms | Allocations: 11335)
+
+
+Started GET "/app/assets/images/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:09:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:10:48 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 91.3ms | Allocations: 10899)
+Completed 200 OK in 104ms (Views: 99.6ms | ActiveRecord: 0.5ms | Allocations: 12369)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:12:16 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 85.2ms | Allocations: 9869)
+Completed 200 OK in 99ms (Views: 94.5ms | ActiveRecord: 0.3ms | Allocations: 11355)
+
+
+Started GET "/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:12:17 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:13:15 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 828)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2264.5ms | Allocations: 133659)
+Completed 200 OK in 2266ms (Views: 2265.3ms | ActiveRecord: 0.3ms | Allocations: 134174)
+
+
+Started GET "/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:13:17 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:13:32 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 98.7ms | Allocations: 10257)
+Completed 200 OK in 114ms (Views: 110.2ms | ActiveRecord: 0.3ms | Allocations: 11704)
+
+
+Started GET "/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:13:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:13:37 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 828)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 100.7ms | Allocations: 16470)
+Completed 200 OK in 103ms (Views: 101.7ms | ActiveRecord: 0.3ms | Allocations: 16984)
+
+
+Started GET "/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:13:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:14:03 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 4510)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 563.7ms | Allocations: 58363)
+Completed 200 OK in 601ms (Views: 579.0ms | ActiveRecord: 1.9ms | Allocations: 64523)
+
+
+Started GET "/toucan_logo.jpg" for 127.0.0.1 at 2022-03-22 12:14:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/toucan_logo.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:17:33 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1662)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 97.7ms | Allocations: 21912)
+Completed 200 OK in 113ms (Views: 109.3ms | ActiveRecord: 0.3ms | Allocations: 25433)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:19:20 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 4515)
+Started GET "/" for 127.0.0.1 at 2022-03-22 12:19:21 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/toucs/index.html.erb:14
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  ↳ app/views/toucs/index.html.erb:14
+  Rendered toucs/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1690)
+  Rendered layout layouts/application.html.erb (Duration: 1635.4ms | Allocations: 122641)
+Completed 500 Internal Server Error in 1676ms (ActiveRecord: 1.4ms | Allocations: 128533)
+
+
+
+Errno::EACCES - Permission denied @ rb_file_s_rename - (C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/jy/jy2Wsd5tXFhVn4Iu6G29lsJLolyq1hdLxFI6BxpWXgk.cache.15540.10288.569309, C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/jy/jy2Wsd5tXFhVn4Iu6G29lsJLolyq1hdLxFI6BxpWXgk.cache):
+  app/views/layouts/application.html.erb:9
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2546.0ms | Allocations: 194053)
+Completed 200 OK in 2548ms (Views: 2546.3ms | ActiveRecord: 0.8ms | Allocations: 194714)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-23 21:41:12 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-23 21:41:12 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-23 21:41:12 +0100
+  [1m[35m (17.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#index as HTML
+Processing by ToucsController#index as HTML
+Processing by ToucsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/toucs_controller.rb:6:in `index'
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/toucs_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_feed.html.erb (Duration: 21.5ms | Allocations: 4318)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 110.5ms | Allocations: 14429)
+  Rendered layout layouts/application.html.erb (Duration: 111.6ms | Allocations: 14547)
+Completed 500 Internal Server Error in 308ms (ActiveRecord: 0.7ms | Allocations: 21781)
+
+
+
+NameError - undefined local variable or method `toucs' for #<ActionView::Base:0x00000000009088>
+Did you mean?  @toucs:
+  app/views/toucs/_feed.html.erb:14
+  app/views/toucs/index.html.erb:4
+
+  Rendered toucs/_feed.html.erb (Duration: 76.1ms | Allocations: 11937)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 128.1ms | Allocations: 18857)
+  Rendered layout layouts/application.html.erb (Duration: 130.7ms | Allocations: 19000)
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 2.6ms | Allocations: 24310)
+
+
+
+NameError - undefined local variable or method `toucs' for #<ActionView::Base:0x000000000090b0>
+Did you mean?  @toucs:
+  app/views/toucs/_feed.html.erb:14
+  app/views/toucs/index.html.erb:4
+
+  Rendered toucs/_feed.html.erb (Duration: 89.2ms | Allocations: 13697)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 178.0ms | Allocations: 23317)
+  Rendered layout layouts/application.html.erb (Duration: 182.5ms | Allocations: 23485)
+Completed 500 Internal Server Error in 428ms (ActiveRecord: 0.0ms | Allocations: 32266)
+
+
+
+NameError - undefined local variable or method `toucs' for #<ActionView::Base:0x00000000009060>
+Did you mean?  @toucs:
+  app/views/toucs/_feed.html.erb:14
+  app/views/toucs/index.html.erb:4
+
+Started POST "/__better_errors/430ad58c6034fe54/variables" for 127.0.0.1 at 2022-03-23 21:41:14 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-23 21:41:23 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_feed.html.erb (Duration: 12.6ms | Allocations: 4312)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 4418)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 4526)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 5113)
+
+
+
+NameError - undefined local variable or method `toucs' for #<ActionView::Base:0x000000000091f0>
+Did you mean?  @toucs:
+  app/views/toucs/_feed.html.erb:14
+  app/views/toucs/index.html.erb:4
+
+Started POST "/__better_errors/a4b4f016ad604632/variables" for 127.0.0.1 at 2022-03-23 21:41:23 +0100
+Started POST "/__better_errors/a4b4f016ad604632/variables" for 127.0.0.1 at 2022-03-23 21:41:37 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-23 21:42:15 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_feed.html.erb (Duration: 12.7ms | Allocations: 4311)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 4418)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 4527)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 5127)
+
+
+
+NameError - undefined local variable or method `toucs' for #<ActionView::Base:0x00000000009308>
+Did you mean?  @toucs:
+  app/views/toucs/_feed.html.erb:14
+  app/views/toucs/index.html.erb:4
+
+Started POST "/__better_errors/aad33ccb27c94612/variables" for 127.0.0.1 at 2022-03-23 21:42:15 +0100
+Started POST "/__better_errors/aad33ccb27c94612/variables" for 127.0.0.1 at 2022-03-23 21:42:39 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-23 21:42:46 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (1.0ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 16.4ms | Allocations: 3854)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 20.7ms | Allocations: 4230)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1159.8ms | Allocations: 50229)
+Completed 200 OK in 1180ms (Views: 1173.0ms | ActiveRecord: 2.4ms | Allocations: 51864)
+
+
+Started GET "/toucs/new" for 127.0.0.1 at 2022-03-23 21:43:13 +0100
+Processing by ToucsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/new.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 291.0ms | Allocations: 11813)
+  Rendered toucs/new.html.erb within layouts/application (Duration: 308.2ms | Allocations: 12540)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 464.6ms | Allocations: 38242)
+Completed 200 OK in 475ms (Views: 467.8ms | ActiveRecord: 0.0ms | Allocations: 39107)
+
+
+Started POST "/toucs" for 127.0.0.1 at 2022-03-23 21:43:18 +0100
+Processing by ToucsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "touc"=>{"touc"=>"c sc "}, "commit"=>"Create Touc"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/toucs_controller.rb:27:in `block in create'
+  [1m[36mTouc Create (2.0ms)[0m  [1m[32mINSERT INTO "toucs" ("touc", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["touc", "c sc "], ["created_at", "2022-03-23 20:43:18.323050"], ["updated_at", "2022-03-23 20:43:18.323050"]]
+  ↳ app/controllers/toucs_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (44.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/toucs_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/toucs/2
+Completed 302 Found in 63ms (ActiveRecord: 46.2ms | Allocations: 4002)
+
+
+Started GET "/toucs/2" for 127.0.0.1 at 2022-03-23 21:43:18 +0100
+Processing by ToucsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/show.html.erb within layouts/application
+  Rendered toucs/show.html.erb within layouts/application (Duration: 12.3ms | Allocations: 287)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 118.4ms | Allocations: 8435)
+Completed 200 OK in 159ms (Views: 120.1ms | ActiveRecord: 0.5ms | Allocations: 11193)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-23 21:43:24 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 4.5ms | Allocations: 760)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 861)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 108.7ms | Allocations: 8869)
+Completed 200 OK in 111ms (Views: 109.6ms | ActiveRecord: 0.5ms | Allocations: 9423)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-23 21:59:32 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 17.1ms | Allocations: 4526)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 22.3ms | Allocations: 5197)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 387.5ms | Allocations: 45717)
+Completed 200 OK in 427ms (Views: 401.1ms | ActiveRecord: 1.8ms | Allocations: 50883)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-23 22:00:29 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 6.5ms | Allocations: 1959)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 3010)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 133.3ms | Allocations: 17300)
+Completed 200 OK in 152ms (Views: 147.0ms | ActiveRecord: 0.4ms | Allocations: 20788)
+
+
+Started GET "/toucs/new" for 127.0.0.1 at 2022-03-23 22:01:13 +0100
+Processing by ToucsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/new.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 309.3ms | Allocations: 9513)
+  Rendered toucs/new.html.erb within layouts/application (Duration: 321.2ms | Allocations: 9988)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 433.9ms | Allocations: 18678)
+Completed 200 OK in 441ms (Views: 435.6ms | ActiveRecord: 0.0ms | Allocations: 19448)
+
+
+Started POST "/toucs" for 127.0.0.1 at 2022-03-23 22:01:21 +0100
+Processing by ToucsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "touc"=>{"touc"=>"salu salu"}, "commit"=>"Create Touc"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/toucs_controller.rb:27:in `block in create'
+  [1m[36mTouc Create (2.0ms)[0m  [1m[32mINSERT INTO "toucs" ("touc", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["touc", "salu salu"], ["created_at", "2022-03-23 21:01:21.932123"], ["updated_at", "2022-03-23 21:01:21.932123"]]
+  ↳ app/controllers/toucs_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (44.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/toucs_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/toucs/3
+Completed 302 Found in 58ms (ActiveRecord: 46.1ms | Allocations: 3632)
+
+
+Started GET "/toucs/3" for 127.0.0.1 at 2022-03-23 22:01:22 +0100
+Processing by ToucsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/show.html.erb within layouts/application
+  Rendered toucs/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 285)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 103.6ms | Allocations: 9098)
+Completed 200 OK in 114ms (Views: 104.9ms | ActiveRecord: 0.4ms | Allocations: 11164)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-23 22:01:32 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 3.7ms | Allocations: 1141)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 153.2ms | Allocations: 9886)
+Completed 200 OK in 156ms (Views: 154.4ms | ActiveRecord: 0.4ms | Allocations: 10441)
+
+
+Started GET "/toucs/3/edit" for 127.0.0.1 at 2022-03-23 22:01:36 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 2.2ms | Allocations: 626)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 12.1ms | Allocations: 905)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 113.6ms | Allocations: 9537)
+Completed 200 OK in 145ms (Views: 115.3ms | ActiveRecord: 0.4ms | Allocations: 11466)
+
+
+Started DELETE "/toucs/3" for 127.0.0.1 at 2022-03-23 22:01:43 +0100
+Processing by ToucsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/toucs_controller.rb:52:in `destroy'
+  [1m[36mTouc Destroy (1.5ms)[0m  [1m[31mDELETE FROM "toucs" WHERE "toucs"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/toucs_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (9.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/toucs_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/toucs
+Completed 302 Found in 29ms (ActiveRecord: 11.6ms | Allocations: 2963)
+
+
+Started GET "/toucs" for 127.0.0.1 at 2022-03-23 22:01:43 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 3.0ms | Allocations: 997)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 92.9ms | Allocations: 9745)
+Completed 200 OK in 96ms (Views: 94.2ms | ActiveRecord: 0.4ms | Allocations: 10264)
+
+
+Started GET "/toucs" for 127.0.0.1 at 2022-03-23 22:19:29 +0100
+Processing by ToucsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/toucs_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 4.6ms | Allocations: 1573)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.7ms | Allocations: 110)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 2864)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 95.3ms | Allocations: 12430)
+Completed 200 OK in 119ms (Views: 110.2ms | ActiveRecord: 0.9ms | Allocations: 14656)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-23 22:23:02 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 4.6ms | Allocations: 1006)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1279)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 95.1ms | Allocations: 9925)
+Completed 200 OK in 98ms (Views: 96.5ms | ActiveRecord: 0.5ms | Allocations: 10504)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-23 22:31:12 +0100
+Processing by ToucsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/toucs_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/index.html.erb within layouts/application (Duration: 193.9ms | Allocations: 16015)
+  Rendered layout layouts/application.html.erb (Duration: 194.9ms | Allocations: 16149)
+Completed 500 Internal Server Error in 212ms (ActiveRecord: 0.5ms | Allocations: 18268)
+
+
+
+ActionView::MissingTemplate - Missing partial toucs/_trends, application/_trends with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/app/views"
+  * "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/devise-4.8.1/app/views"
+  * "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/actiontext-6.1.5/app/views"
+  * "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.5/app/views":
+  app/views/toucs/index.html.erb:4
+
+Started POST "/__better_errors/29f731d87fe582ee/variables" for 127.0.0.1 at 2022-03-23 22:31:13 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-23 22:31:51 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 1954)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 2079)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms | Allocations: 3634)
+
+
+
+ActionView::MissingTemplate - Missing partial toucs/_trends, application/_trends with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/app/views"
+  * "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/devise-4.8.1/app/views"
+  * "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/actiontext-6.1.5/app/views"
+  * "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.5/app/views":
+  app/views/toucs/index.html.erb:4
+
+Started POST "/__better_errors/3f2d1c3a6689ae85/variables" for 127.0.0.1 at 2022-03-23 22:31:52 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-23 22:31:53 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1113)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1222)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1809)
+
+
+
+ActionView::MissingTemplate - Missing partial toucs/_trends, application/_trends with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/app/views"
+  * "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/devise-4.8.1/app/views"
+  * "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/actiontext-6.1.5/app/views"
+  * "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.5/app/views":
+  app/views/toucs/index.html.erb:4
+
+Started POST "/__better_errors/af1b0b76c0e65455/variables" for 127.0.0.1 at 2022-03-23 22:31:53 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-23 22:31:54 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1112)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1221)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1807)
+
+
+
+ActionView::MissingTemplate - Missing partial toucs/_trends, application/_trends with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/app/views"
+  * "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/devise-4.8.1/app/views"
+  * "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/actiontext-6.1.5/app/views"
+  * "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.5/app/views":
+  app/views/toucs/index.html.erb:4
+
+Started POST "/__better_errors/1eb01df457592d47/variables" for 127.0.0.1 at 2022-03-23 22:31:54 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-23 22:31:55 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1112)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1221)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1807)
+
+
+
+ActionView::MissingTemplate - Missing partial toucs/_trends, application/_trends with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/app/views"
+  * "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/devise-4.8.1/app/views"
+  * "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/actiontext-6.1.5/app/views"
+  * "C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.5/app/views":
+  app/views/toucs/index.html.erb:4
+
+Started POST "/__better_errors/a16e7b5a7561384e/variables" for 127.0.0.1 at 2022-03-23 22:31:55 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-23 22:32:08 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.7ms | Allocations: 391)
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 10.3ms | Allocations: 2051)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.5ms | Allocations: 124)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 22.7ms | Allocations: 6208)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 133.3ms | Allocations: 20730)
+Completed 200 OK in 149ms (Views: 144.5ms | ActiveRecord: 0.4ms | Allocations: 24270)
+
+
+Started DELETE "/toucs/2" for 127.0.0.1 at 2022-03-23 22:32:30 +0100
+Processing by ToucsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:63:in `set_touc'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/toucs_controller.rb:52:in `destroy'
+  [1m[36mTouc Destroy (1.2ms)[0m  [1m[31mDELETE FROM "toucs" WHERE "toucs"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/toucs_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (35.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/toucs_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/toucs
+Completed 302 Found in 51ms (ActiveRecord: 36.8ms | Allocations: 4746)
+
+
+Started GET "/toucs" for 127.0.0.1 at 2022-03-23 22:32:30 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 3.0ms | Allocations: 1070)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2096)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 100.8ms | Allocations: 11936)
+Completed 200 OK in 103ms (Views: 101.7ms | ActiveRecord: 0.3ms | Allocations: 12767)
+
+
+Started GET "/toucs" for 127.0.0.1 at 2022-03-23 22:44:18 +0100
+Processing by ToucsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/toucs_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.4ms | Allocations: 96)
+  Rendered toucs/_form.html.erb (Duration: 849.4ms | Allocations: 49301)
+  Rendered toucs/_feed.html.erb (Duration: 852.9ms | Allocations: 49870)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 859.7ms | Allocations: 50605)
+  Rendered layout layouts/application.html.erb (Duration: 860.5ms | Allocations: 50716)
+Completed 500 Internal Server Error in 878ms (ActiveRecord: 0.5ms | Allocations: 52821)
+
+
+
+NoMethodError - undefined method `model_name' for nil:NilClass:
+  app/views/toucs/_form.html.erb:1
+  app/views/toucs/_feed.html.erb:9
+  app/views/toucs/index.html.erb:5
+
+Started POST "/__better_errors/a4c91f9b99c5ce37/variables" for 127.0.0.1 at 2022-03-23 22:44:19 +0100
+Started POST "/__better_errors/a4c91f9b99c5ce37/variables" for 127.0.0.1 at 2022-03-23 22:44:32 +0100
+Started POST "/__better_errors/a4c91f9b99c5ce37/variables" for 127.0.0.1 at 2022-03-23 22:44:35 +0100
+Started GET "/toucs" for 127.0.0.1 at 2022-03-23 22:46:08 +0100
+Processing by ToucsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/toucs_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.4ms | Allocations: 95)
+  Rendered toucs/_form.html.erb (Duration: 22.5ms | Allocations: 3960)
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 29.0ms | Allocations: 5562)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.5ms | Allocations: 127)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 38.4ms | Allocations: 6684)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 131.7ms | Allocations: 15838)
+Completed 200 OK in 161ms (Views: 142.9ms | ActiveRecord: 3.3ms | Allocations: 21060)
+
+
+Started GET "/toucs" for 127.0.0.1 at 2022-03-23 22:49:55 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.5ms | Allocations: 95)
+  Rendered toucs/_form.html.erb (Duration: 5.0ms | Allocations: 3305)
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 12.5ms | Allocations: 4829)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.6ms | Allocations: 108)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 22.8ms | Allocations: 5890)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 121.1ms | Allocations: 15036)
+Completed 200 OK in 136ms (Views: 131.1ms | ActiveRecord: 0.5ms | Allocations: 16594)
+
+
+Started GET "/toucs" for 127.0.0.1 at 2022-03-23 22:49:58 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered toucs/_form.html.erb (Duration: 4.9ms | Allocations: 2935)
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 8.5ms | Allocations: 3886)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 4180)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 103.1ms | Allocations: 12709)
+Completed 200 OK in 105ms (Views: 103.9ms | ActiveRecord: 0.4ms | Allocations: 13301)
+
+
+Started GET "/toucs" for 127.0.0.1 at 2022-03-23 22:55:01 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.7ms | Allocations: 407)
+  Rendered toucs/_form.html.erb (Duration: 8.1ms | Allocations: 3327)
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 15.6ms | Allocations: 6071)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.9ms | Allocations: 452)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 27.5ms | Allocations: 9745)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 131.2ms | Allocations: 30367)
+Completed 200 OK in 146ms (Views: 142.0ms | ActiveRecord: 0.4ms | Allocations: 33561)
+
+
