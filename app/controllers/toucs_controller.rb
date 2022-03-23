@@ -3,7 +3,7 @@ class ToucsController < ApplicationController
 
   # GET /toucs or /toucs.json
   def index
-    @toucs = Touc.all
+    @toucs = Touc.all.order("created_at DESC")
   end
 
   # GET /toucs/1 or /toucs/1.json
