@@ -13,7 +13,7 @@ class ToucsController < ApplicationController
 
   # GET /toucs/new
   def new
-    @touc = Touc.new
+    @touc = current_user.toucs.build
   end
 
   # GET /toucs/1/edit
@@ -22,7 +22,7 @@ class ToucsController < ApplicationController
 
   # POST /toucs or /toucs.json
   def create
-    @touc = Touc.new(touc_params)
+    @touc = current_user.toucs.build(touc_params)
 
     respond_to do |format|
       if @touc.save
