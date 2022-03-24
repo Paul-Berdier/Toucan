@@ -2699,3 +2699,432 @@ Migrating to AddUserIdToToucs (20220324001257)
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:21:56 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 899)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 112.5ms | Allocations: 26959)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 417.2ms | Allocations: 65286)
+Completed 200 OK in 502ms (Views: 462.6ms | ActiveRecord: 5.0ms | Allocations: 78100)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-24 01:22:49 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Admin1", "username"=>"Admin", "email"=>"paul.berdo@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameters: :name, :username[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paul.berdo@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "paul.berdo@hotmail.com"], ["encrypted_password", "$2a$12$yNUOIyDRqpV8NjvkMFXqrO1X2RP4ILfsY2lOMjHmksVZGS8WlGxt."], ["created_at", "2022-03-24 00:22:50.016924"], ["updated_at", "2022-03-24 00:22:50.016924"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 696ms (ActiveRecord: 6.2ms | Allocations: 19109)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-24 01:22:50 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.4ms | Allocations: 97)
+  Rendered toucs/_form.html.erb (Duration: 6.4ms | Allocations: 3718)
+  [1m[36mTouc Load (0.9ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 14.1ms | Allocations: 5902)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 1.0ms | Allocations: 129)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 28.1ms | Allocations: 7323)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 156.0ms | Allocations: 35479)
+Completed 200 OK in 176ms (Views: 162.4ms | ActiveRecord: 1.9ms | Allocations: 40407)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (2.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (42.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:30:58 +0100
+
+NameError - uninitialized constant Devise::ResgistrationsController
+Did you mean?  RegistrationsController
+               Devise::RegistrationsController:
+  app/controllers/registrations_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/2dd48684fd0a1676/variables" for 127.0.0.1 at 2022-03-24 01:30:58 +0100
+Started GET "/users/password" for 127.0.0.1 at 2022-03-24 01:31:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/password"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:31:16 +0100
+
+NameError - uninitialized constant Devise::ResgistrationsController
+Did you mean?  RegistrationsController
+               Devise::RegistrationsController:
+  app/controllers/registrations_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/70bd345f01c6a18c/variables" for 127.0.0.1 at 2022-03-24 01:31:17 +0100
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:31:24 +0100
+
+NameError - uninitialized constant Devise::ResgistrationsController
+Did you mean?  RegistrationsController
+               Devise::RegistrationsController:
+  app/controllers/registrations_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/e440020c0fc90af6/variables" for 127.0.0.1 at 2022-03-24 01:31:24 +0100
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:31:25 +0100
+
+NameError - uninitialized constant Devise::ResgistrationsController
+Did you mean?  RegistrationsController
+               Devise::RegistrationsController:
+  app/controllers/registrations_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/ec8b535d4de68e95/variables" for 127.0.0.1 at 2022-03-24 01:31:26 +0100
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:31:26 +0100
+
+NameError - uninitialized constant Devise::ResgistrationsController
+Did you mean?  RegistrationsController
+               Devise::RegistrationsController:
+  app/controllers/registrations_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/f91801074ea22a5c/variables" for 127.0.0.1 at 2022-03-24 01:31:26 +0100
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:31:27 +0100
+
+NameError - uninitialized constant Devise::ResgistrationsController
+Did you mean?  RegistrationsController
+               Devise::RegistrationsController:
+  app/controllers/registrations_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/7bbf5e7b68bd2869/variables" for 127.0.0.1 at 2022-03-24 01:31:27 +0100
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:31:28 +0100
+
+NameError - uninitialized constant Devise::ResgistrationsController
+Did you mean?  RegistrationsController
+               Devise::RegistrationsController:
+  app/controllers/registrations_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/c5691021a94f4a3a/variables" for 127.0.0.1 at 2022-03-24 01:31:28 +0100
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:31:37 +0100
+
+NameError - uninitialized constant Devise::ResgistrationsController
+Did you mean?  RegistrationsController
+               Devise::RegistrationsController:
+  app/controllers/registrations_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/587637c709de5d42/variables" for 127.0.0.1 at 2022-03-24 01:31:37 +0100
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:31:38 +0100
+
+NameError - uninitialized constant Devise::ResgistrationsController
+Did you mean?  RegistrationsController
+               Devise::RegistrationsController:
+  app/controllers/registrations_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/76cf4856ef82b552/variables" for 127.0.0.1 at 2022-03-24 01:31:38 +0100
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:31:38 +0100
+
+NameError - uninitialized constant Devise::ResgistrationsController
+Did you mean?  RegistrationsController
+               Devise::RegistrationsController:
+  app/controllers/registrations_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/b80ad64d9ab38b04/variables" for 127.0.0.1 at 2022-03-24 01:31:39 +0100
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:31:41 +0100
+
+NameError - uninitialized constant Devise::ResgistrationsController
+Did you mean?  RegistrationsController
+               Devise::RegistrationsController:
+  app/controllers/registrations_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/d3f086fa3950928a/variables" for 127.0.0.1 at 2022-03-24 01:31:41 +0100
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:31:41 +0100
+
+NameError - uninitialized constant Devise::ResgistrationsController
+Did you mean?  RegistrationsController
+               Devise::RegistrationsController:
+  app/controllers/registrations_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/f880bb647e102c79/variables" for 127.0.0.1 at 2022-03-24 01:31:42 +0100
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:32:36 +0100
+
+NameError - uninitialized constant Devise::ResgistrationsController
+Did you mean?  RegistrationsController
+               Devise::RegistrationsController:
+  app/controllers/registrations_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/29a377735781f60e/variables" for 127.0.0.1 at 2022-03-24 01:32:37 +0100
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:32:55 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+NameError - uninitialized constant Devise::ResgistrationsController
+Did you mean?  RegistrationsController
+               Devise::RegistrationsController:
+  app/controllers/registrations_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/35f16adc7800b951/variables" for 127.0.0.1 at 2022-03-24 01:32:55 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-24 01:40:18 +0100
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.8ms | Allocations: 111)
+  Rendered toucs/_form.html.erb (Duration: 69.6ms | Allocations: 16495)
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 79.7ms | Allocations: 19070)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.9ms | Allocations: 155)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 96.0ms | Allocations: 21813)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 404.1ms | Allocations: 64828)
+Completed 200 OK in 444ms (Views: 421.1ms | ActiveRecord: 1.5ms | Allocations: 74274)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:40:39 +0100
+
+NameError - uninitialized constant Devise::ResgistrationsController
+Did you mean?  RegistrationsController
+               Devise::RegistrationsController:
+  app/controllers/registrations_controller.rb:1:in `<main>'
+
+Started POST "/__better_errors/f9a899c7a911a0ed/variables" for 127.0.0.1 at 2022-03-24 01:40:39 +0100
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 01:47:21 +0100
+Processing by RegistrationsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 559)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 36.3ms | Allocations: 12446)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 128.8ms | Allocations: 30207)
+Completed 200 OK in 187ms (Views: 159.4ms | ActiveRecord: 2.8ms | Allocations: 41189)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-24 01:48:13 +0100
+Processing by RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Paul Berdier", "username"=>"Adim", "email"=>"paul.berdo@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paul.berdo@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "paul.berdo@hotmail.com"], ["encrypted_password", "$2a$12$ABNDhbbHtZSosVlnEuLlq.fqX15A508KrinaKGtxgG2hc3dqFl0ri"], ["created_at", "2022-03-24 00:48:13.815935"], ["updated_at", "2022-03-24 00:48:13.815935"], ["name", "Paul Berdier"], ["username", "Adim"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 318ms (ActiveRecord: 8.3ms | Allocations: 17385)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-24 01:48:13 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered toucs/_form.html.erb (Duration: 5.2ms | Allocations: 3259)
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 12.2ms | Allocations: 5382)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 6321)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 117.0ms | Allocations: 19517)
+Completed 200 OK in 144ms (Views: 119.8ms | ActiveRecord: 1.6ms | Allocations: 24579)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started DELETE "/toucs/8" for 127.0.0.1 at 2022-03-24 01:50:46 +0100
+Processing by ToucsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/toucs_controller.rb:53:in `destroy'
+  [1m[36mTouc Destroy (1.3ms)[0m  [1m[31mDELETE FROM "toucs" WHERE "toucs"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/toucs_controller.rb:53:in `destroy'
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/toucs_controller.rb:53:in `destroy'
+Redirected to http://127.0.0.1:3000/toucs
+Completed 302 Found in 34ms (ActiveRecord: 9.2ms | Allocations: 6953)
+
+
+Started GET "/toucs" for 127.0.0.1 at 2022-03-24 01:50:46 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered toucs/_form.html.erb (Duration: 4.1ms | Allocations: 2947)
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 9.4ms | Allocations: 4384)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 4949)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 104.1ms | Allocations: 13724)
+Completed 200 OK in 107ms (Views: 105.5ms | ActiveRecord: 0.4ms | Allocations: 14554)
+
+
+Started DELETE "/toucs/7" for 127.0.0.1 at 2022-03-24 01:50:49 +0100
+Processing by ToucsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"7"}
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/toucs_controller.rb:53:in `destroy'
+  [1m[36mTouc Destroy (1.3ms)[0m  [1m[31mDELETE FROM "toucs" WHERE "toucs"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/toucs_controller.rb:53:in `destroy'
+  [1m[36mTRANSACTION (35.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/toucs_controller.rb:53:in `destroy'
+Redirected to http://127.0.0.1:3000/toucs
+Completed 302 Found in 53ms (ActiveRecord: 37.8ms | Allocations: 4069)
+
+
+Started GET "/toucs" for 127.0.0.1 at 2022-03-24 01:50:49 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered toucs/_form.html.erb (Duration: 4.6ms | Allocations: 2947)
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 8.2ms | Allocations: 4148)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 4442)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 97.9ms | Allocations: 12975)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.4ms | Allocations: 13514)
+
+
+Started DELETE "/toucs/6" for 127.0.0.1 at 2022-03-24 01:50:53 +0100
+Processing by ToucsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"6"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/toucs_controller.rb:53:in `destroy'
+  [1m[36mTouc Destroy (1.5ms)[0m  [1m[31mDELETE FROM "toucs" WHERE "toucs"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/toucs_controller.rb:53:in `destroy'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/toucs_controller.rb:53:in `destroy'
+Redirected to http://127.0.0.1:3000/toucs
+Completed 302 Found in 31ms (ActiveRecord: 5.2ms | Allocations: 5750)
+
+
+Started GET "/toucs" for 127.0.0.1 at 2022-03-24 01:50:53 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered toucs/_form.html.erb (Duration: 7.7ms | Allocations: 2947)
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 12.6ms | Allocations: 4025)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 4319)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 112.8ms | Allocations: 14169)
+Completed 200 OK in 115ms (Views: 113.3ms | ActiveRecord: 0.5ms | Allocations: 14708)
+
+
+Started DELETE "/toucs/5" for 127.0.0.1 at 2022-03-24 01:50:56 +0100
+Processing by ToucsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"5"}
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/toucs_controller.rb:53:in `destroy'
+  [1m[36mTouc Destroy (1.2ms)[0m  [1m[31mDELETE FROM "toucs" WHERE "toucs"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/toucs_controller.rb:53:in `destroy'
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/toucs_controller.rb:53:in `destroy'
+Redirected to http://127.0.0.1:3000/toucs
+Completed 302 Found in 21ms (ActiveRecord: 7.3ms | Allocations: 4091)
+
+
+Started GET "/toucs" for 127.0.0.1 at 2022-03-24 01:50:56 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered toucs/_form.html.erb (Duration: 4.0ms | Allocations: 2947)
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 14.3ms | Allocations: 3898)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 4192)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 126.7ms | Allocations: 12728)
+Completed 200 OK in 131ms (Views: 129.0ms | ActiveRecord: 0.5ms | Allocations: 13269)
+
+
+Started DELETE "/toucs/1" for 127.0.0.1 at 2022-03-24 01:50:59 +0100
+Processing by ToucsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mTouc Load (0.8ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/toucs_controller.rb:53:in `destroy'
+  [1m[36mTouc Destroy (1.3ms)[0m  [1m[31mDELETE FROM "toucs" WHERE "toucs"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/toucs_controller.rb:53:in `destroy'
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/toucs_controller.rb:53:in `destroy'
+Redirected to http://127.0.0.1:3000/toucs
+Completed 302 Found in 23ms (ActiveRecord: 7.1ms | Allocations: 4442)
+
+
+Started GET "/toucs" for 127.0.0.1 at 2022-03-24 01:50:59 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered toucs/_form.html.erb (Duration: 4.5ms | Allocations: 2947)
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 7.9ms | Allocations: 3773)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 4067)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 117.6ms | Allocations: 13836)
+Completed 200 OK in 120ms (Views: 118.4ms | ActiveRecord: 0.4ms | Allocations: 14485)
+
+
+Started POST "/toucs" for 127.0.0.1 at 2022-03-24 01:51:19 +0100
+Processing by ToucsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "touc"=>{"touc"=>"ah oui oui oui"}, "commit"=>"Create Touc"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/toucs_controller.rb:28:in `block in create'
+  [1m[36mTouc Create (1.8ms)[0m  [1m[32mINSERT INTO "toucs" ("touc", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["touc", "ah oui oui oui"], ["created_at", "2022-03-24 00:51:19.553788"], ["updated_at", "2022-03-24 00:51:19.553788"], ["user_id", 2]]
+  ↳ app/controllers/toucs_controller.rb:28:in `block in create'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/toucs_controller.rb:28:in `block in create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 339ms (ActiveRecord: 6.0ms | Allocations: 40838)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-24 01:51:19 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered toucs/_form.html.erb (Duration: 4.0ms | Allocations: 3081)
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:14
+  Rendered toucs/_feed.html.erb (Duration: 7.1ms | Allocations: 4079)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 4381)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 100.3ms | Allocations: 13035)
+Completed 200 OK in 102ms (Views: 100.9ms | ActiveRecord: 0.4ms | Allocations: 13674)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
