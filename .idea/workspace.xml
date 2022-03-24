@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e17ddf2-afa5-4b1c-a8f4-8fed5445e5c4" name="Changes" comment="fix:page_acueil navbar">
-      <change afterPath="$PROJECT_DIR$/app/views/toucs/_profile.html.erb" afterDir="false" />
+    <list default="true" id="0e17ddf2-afa5-4b1c-a8f4-8fed5445e5c4" name="Changes" comment="init:profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/toucs/_feed.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/toucs/_feed.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/toucs/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/toucs/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/toucs/_profile.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/toucs/_profile.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648085215852</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="init:profile">
+      <created>1648111135900</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1648111135900</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +237,7 @@
     <MESSAGE value="new:user(db)" />
     <MESSAGE value="fix:signup" />
     <MESSAGE value="fix:page_acueil navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix:page_acueil navbar" />
+    <MESSAGE value="init:profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="init:profile" />
   </component>
 </project>
