@@ -36,11 +36,16 @@
 
       <div id="navbarExample" class="navbar-menu">
         <div class="navbar-end">
+          <div class="navbar-item">
           <div class="field is-grouped">
             <p class="control">
               <%= link_to 'New Touc', new_touc_path, class: "button is-info is-inverted" %>
             </p>
-            <p class="control">Sign Up</p>
+            <% if user_signed_in? %>
+            <p class="control"><%= link_to current_user.name, edit_user_registration_path, class: "button is-info"%></p>
+              <p><%= link_to "Log out", destroy_user_session_path, class: "button is-info" %></p>
+              <% end %>
+          </div>
           </div>
         </div>
       </div>
