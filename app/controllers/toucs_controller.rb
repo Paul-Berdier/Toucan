@@ -1,6 +1,6 @@
 class ToucsController < ApplicationController
   before_action :set_touc, only: %i[ show edit update destroy ]
-
+  before_action :authenticate_user!, except: [:index, :show]
   # GET /toucs or /toucs.json
   def index
     @toucs = Touc.all.order("created_at DESC")
@@ -13,7 +13,7 @@ class ToucsController < ApplicationController
 
   # GET /toucs/new
   def new
-    @touc = Touc.new
+    @touc = current_user.toucs.build
   end
 
   # GET /toucs/1/edit
@@ -22,11 +22,11 @@ class ToucsController < ApplicationController
 
   # POST /toucs or /toucs.json
   def create
-    @touc = Touc.new(touc_params)
+    @touc = current_user.toucs.build(touc_params)
 
     respond_to do |format|
       if @touc.save
-        format.html { redirect_to touc_url(@touc), notice: "Touc was successfully created." }
+        format.html { redirect_to root_path, notice: "Touc was successfully created." }
         format.json { render :show, status: :created, location: @touc }
       else
         format.html { render :new, status: :unprocessable_entity }

@@ -1,6 +1,22 @@
-<h1>Editing Touc</h1>
+<div class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <h1 class="title">Editing Touc</h1>
+        <%= render 'form', touc: @touc %>
+      </div>
+    </div>
+  </div>
+</div>
 
-<%= render 'form', touc: @touc %>
-
-<%= link_to 'Show', @touc %> |
-<%= link_to 'Back', toucs_path %>
+<nav class="navbar is-fixed-buttom">
+  <div class="navbar-menu">
+    <div class="navbar-item">
+      <div class="field is-grouped">
+        <p class="control">
+          <%= link_to 'Cancel', toucs_path, class: "button is-dark" %>
+        </p>
+      </div>
+    </div>
+  </div>
+</nav>

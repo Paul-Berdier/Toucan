@@ -17,7 +17,7 @@
 @import "bulma";
 
 .navbar-brand .title {
-  color: saddlebrown;
+  color: whitesmoke;
 }
 
 .image {
@@ -27,6 +27,6 @@
   }
 }
 
-.notifications:not(:last-child) {
+.notification:not(:last-child) {
   margin-bottom: 0;
 }

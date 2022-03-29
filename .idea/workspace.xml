@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e17ddf2-afa5-4b1c-a8f4-8fed5445e5c4" name="Changes" comment="init:feed+follow">
-      <change afterPath="$PROJECT_DIR$/app/views/toucs/_trends.html.erb" afterDir="false" />
+    <list default="true" id="0e17ddf2-afa5-4b1c-a8f4-8fed5445e5c4" name="Changes" comment="init:gravatar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/toucs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/toucs_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/toucs/_feed.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/toucs/_feed.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/toucs/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/toucs/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/toucs/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/toucs/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/toucs/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/toucs/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/toucs/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/toucs/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -137,7 +136,84 @@
       <option name="project" value="LOCAL" />
       <updated>1648070418920</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix:page accueil">
+      <created>1648076096238</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1648076096238</updated>
+    </task>
+    <task id="LOCAL-00012" summary="init:devise_user">
+      <created>1648076169444</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1648076169444</updated>
+    </task>
+    <task id="LOCAL-00013" summary="init:devise_user">
+      <created>1648076261179</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1648076261179</updated>
+    </task>
+    <task id="LOCAL-00014" summary="init:user_registration">
+      <created>1648077339673</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1648077339673</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix:page_registration">
+      <created>1648080571618</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1648080571618</updated>
+    </task>
+    <task id="LOCAL-00016" summary="set:user_id/touc_id">
+      <created>1648081040914</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1648081040914</updated>
+    </task>
+    <task id="LOCAL-00017" summary="new:user(db)">
+      <created>1648081678510</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1648081678510</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix:signup">
+      <created>1648083618753</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1648083618753</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix:page_acueil navbar">
+      <created>1648085215852</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1648085215852</updated>
+    </task>
+    <task id="LOCAL-00020" summary="init:profile">
+      <created>1648111135900</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1648111135900</updated>
+    </task>
+    <task id="LOCAL-00021" summary="init:gravatar">
+      <created>1648112020078</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1648112020078</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +239,16 @@
     <MESSAGE value="init:app(html)/rake(route)" />
     <MESSAGE value="init:index(html)" />
     <MESSAGE value="init:feed+follow" />
-    <option name="LAST_COMMIT_MESSAGE" value="init:feed+follow" />
+    <MESSAGE value="fix:page accueil" />
+    <MESSAGE value="init:devise_user" />
+    <MESSAGE value="init:user_registration" />
+    <MESSAGE value="fix:page_registration" />
+    <MESSAGE value="set:user_id/touc_id" />
+    <MESSAGE value="new:user(db)" />
+    <MESSAGE value="fix:signup" />
+    <MESSAGE value="fix:page_acueil navbar" />
+    <MESSAGE value="init:profile" />
+    <MESSAGE value="init:gravatar" />
+    <option name="LAST_COMMIT_MESSAGE" value="init:gravatar" />
   </component>
 </project>
