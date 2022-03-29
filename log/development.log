@@ -4461,3 +4461,557 @@ Processing by ToucsController#index as HTML
 Completed 200 OK in 122ms (Views: 119.5ms | ActiveRecord: 1.4ms | Allocations: 18467)
 
 
+Started GET "/" for 127.0.0.1 at 2022-03-24 09:40:26 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/index.html.erb:4
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "toucs" WHERE "toucs"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/toucs/_profile.html.erb:26
+  Rendered toucs/_profile.html.erb (Duration: 4.3ms | Allocations: 898)
+  Rendered toucs/_form.html.erb (Duration: 5.2ms | Allocations: 2953)
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:26
+  Rendered toucs/_feed.html.erb (Duration: 14.3ms | Allocations: 5683)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 23.1ms | Allocations: 7785)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 115.1ms | Allocations: 16361)
+Completed 200 OK in 117ms (Views: 114.3ms | ActiveRecord: 1.9ms | Allocations: 16891)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-24 09:41:08 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/index.html.erb:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "toucs" WHERE "toucs"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/toucs/_profile.html.erb:26
+  Rendered toucs/_profile.html.erb (Duration: 4.7ms | Allocations: 1475)
+  Rendered toucs/_form.html.erb (Duration: 4.6ms | Allocations: 3339)
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:26
+  Rendered toucs/_feed.html.erb (Duration: 22.5ms | Allocations: 7782)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.7ms | Allocations: 142)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 46.0ms | Allocations: 13788)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 156.9ms | Allocations: 26081)
+Completed 200 OK in 174ms (Views: 167.3ms | ActiveRecord: 1.4ms | Allocations: 29246)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-24 09:43:54 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/index.html.erb:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "toucs" WHERE "toucs"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/toucs/_profile.html.erb:26
+  Rendered toucs/_profile.html.erb (Duration: 3.7ms | Allocations: 1094)
+  Rendered toucs/_form.html.erb (Duration: 11.8ms | Allocations: 3313)
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:26
+  Rendered toucs/_feed.html.erb (Duration: 23.9ms | Allocations: 6614)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.5ms | Allocations: 108)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 42.5ms | Allocations: 9822)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 135.9ms | Allocations: 19162)
+Completed 200 OK in 149ms (Views: 143.6ms | ActiveRecord: 1.3ms | Allocations: 20709)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-24 09:49:45 +0100
+Processing by ToucsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/toucs_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/index.html.erb:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "toucs" WHERE "toucs"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/toucs/_profile.html.erb:26
+  Rendered toucs/_profile.html.erb (Duration: 7.5ms | Allocations: 1193)
+  Rendered toucs/_form.html.erb (Duration: 10.1ms | Allocations: 3307)
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:16
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  Rendered toucs/_feed.html.erb (Duration: 30.3ms | Allocations: 6797)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.8ms | Allocations: 108)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 60.1ms | Allocations: 10133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 160.0ms | Allocations: 19477)
+Completed 200 OK in 181ms (Views: 169.4ms | ActiveRecord: 3.0ms | Allocations: 21694)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-24 09:51:30 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/index.html.erb:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "toucs" WHERE "toucs"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/toucs/_profile.html.erb:26
+  Rendered toucs/_profile.html.erb (Duration: 3.6ms | Allocations: 1175)
+  Rendered toucs/_form.html.erb (Duration: 6.3ms | Allocations: 3307)
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  Rendered toucs/_feed.html.erb (Duration: 18.2ms | Allocations: 6776)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.5ms | Allocations: 108)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 39.5ms | Allocations: 10065)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 124.5ms | Allocations: 19405)
+Completed 200 OK in 139ms (Views: 132.3ms | ActiveRecord: 1.3ms | Allocations: 20952)
+
+
+Started GET "/toucs/13/edit" for 127.0.0.1 at 2022-03-24 10:01:15 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mTouc Load (0.6ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 8.5ms | Allocations: 3334)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 16.3ms | Allocations: 3825)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 100.2ms | Allocations: 31902)
+Completed 200 OK in 127ms (Views: 110.9ms | ActiveRecord: 1.8ms | Allocations: 36020)
+
+
+Started GET "/toucs/13/edit" for 127.0.0.1 at 2022-03-24 10:01:49 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 7.5ms | Allocations: 2912)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 8.3ms | Allocations: 3051)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 99.4ms | Allocations: 12955)
+Completed 200 OK in 110ms (Views: 100.6ms | ActiveRecord: 0.8ms | Allocations: 15463)
+
+
+Started GET "/toucs/13/edit" for 127.0.0.1 at 2022-03-24 10:02:03 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 4.7ms | Allocations: 3571)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 8.9ms | Allocations: 4723)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 123.2ms | Allocations: 23086)
+Completed 200 OK in 146ms (Views: 134.3ms | ActiveRecord: 0.7ms | Allocations: 28366)
+
+
+Started GET "/toucs/13/edit" for 127.0.0.1 at 2022-03-24 10:02:31 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 4.5ms | Allocations: 3299)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3788)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 101.4ms | Allocations: 13152)
+Completed 200 OK in 130ms (Views: 117.7ms | ActiveRecord: 0.8ms | Allocations: 16625)
+
+
+Started GET "/toucs/13/edit" for 127.0.0.1 at 2022-03-24 10:04:16 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 9.6ms | Allocations: 3299)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 14.0ms | Allocations: 3790)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 113.4ms | Allocations: 13155)
+Completed 200 OK in 134ms (Views: 125.3ms | ActiveRecord: 0.7ms | Allocations: 16628)
+
+
+Started GET "/toucs/13/edit" for 127.0.0.1 at 2022-03-24 10:57:17 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mTouc Load (0.6ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 15.7ms | Allocations: 3304)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 19.2ms | Allocations: 3802)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 266.3ms | Allocations: 31876)
+Completed 200 OK in 308ms (Views: 279.8ms | ActiveRecord: 1.8ms | Allocations: 37371)
+
+
+Started GET "/toucs/13/edit" for 127.0.0.1 at 2022-03-24 10:57:42 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 3.7ms | Allocations: 2912)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 4.3ms | Allocations: 3056)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 81.7ms | Allocations: 11643)
+Completed 200 OK in 92ms (Views: 83.6ms | ActiveRecord: 0.7ms | Allocations: 14151)
+
+
+Started GET "/toucs/13/edit" for 127.0.0.1 at 2022-03-24 11:01:50 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 5.3ms | Allocations: 3299)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 8.9ms | Allocations: 3800)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 101.0ms | Allocations: 14198)
+Completed 200 OK in 123ms (Views: 111.0ms | ActiveRecord: 0.8ms | Allocations: 17469)
+
+
+Started GET "/toucs/13/edit" for 127.0.0.1 at 2022-03-24 11:05:06 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 8.9ms | Allocations: 3299)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 12.3ms | Allocations: 3806)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 113.3ms | Allocations: 13170)
+Completed 200 OK in 134ms (Views: 122.8ms | ActiveRecord: 0.6ms | Allocations: 16643)
+
+
+Started GET "/toucs/13/edit" for 127.0.0.1 at 2022-03-24 11:06:17 +0100
+Processing by ToucsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" WHERE "toucs"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/toucs_controller.rb:64:in `set_touc'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/edit.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 4.8ms | Allocations: 2912)
+  Rendered toucs/edit.html.erb within layouts/application (Duration: 6.0ms | Allocations: 3056)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 102.2ms | Allocations: 11643)
+Completed 200 OK in 114ms (Views: 103.8ms | ActiveRecord: 0.9ms | Allocations: 14151)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-24 11:06:55 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/index.html.erb:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "toucs" WHERE "toucs"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/toucs/_profile.html.erb:26
+  Rendered toucs/_profile.html.erb (Duration: 12.2ms | Allocations: 1174)
+  Rendered toucs/_form.html.erb (Duration: 6.4ms | Allocations: 3301)
+  [1m[36mTouc Load (1.1ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:16
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  Rendered toucs/_feed.html.erb (Duration: 38.0ms | Allocations: 6793)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 8.9ms | Allocations: 108)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 77.1ms | Allocations: 10080)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 159.8ms | Allocations: 20454)
+Completed 200 OK in 179ms (Views: 172.8ms | ActiveRecord: 2.2ms | Allocations: 22116)
+
+
+Started GET "/toucs/new" for 127.0.0.1 at 2022-03-24 11:07:03 +0100
+Processing by ToucsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/new.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 5.6ms | Allocations: 3044)
+  Rendered toucs/new.html.erb within layouts/application (Duration: 20.3ms | Allocations: 3372)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 101.4ms | Allocations: 11949)
+Completed 200 OK in 113ms (Views: 104.2ms | ActiveRecord: 0.3ms | Allocations: 14126)
+
+
+Started GET "/toucs/new" for 127.0.0.1 at 2022-03-24 11:08:32 +0100
+Processing by ToucsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/new.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 5.0ms | Allocations: 2885)
+  Rendered toucs/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3001)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 89.8ms | Allocations: 11579)
+Completed 200 OK in 96ms (Views: 91.5ms | ActiveRecord: 0.3ms | Allocations: 13488)
+
+
+Started GET "/toucs/new" for 127.0.0.1 at 2022-03-24 11:08:35 +0100
+Processing by ToucsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/new.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 7.4ms | Allocations: 3260)
+  Rendered toucs/new.html.erb within layouts/application (Duration: 12.4ms | Allocations: 4040)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 105.7ms | Allocations: 20227)
+Completed 200 OK in 127ms (Views: 119.3ms | ActiveRecord: 0.3ms | Allocations: 25205)
+
+
+Started GET "/toucs/new" for 127.0.0.1 at 2022-03-24 11:09:07 +0100
+Processing by ToucsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/new.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 5.7ms | Allocations: 3260)
+  Rendered toucs/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 3704)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 112.0ms | Allocations: 19534)
+Completed 200 OK in 135ms (Views: 121.8ms | ActiveRecord: 0.4ms | Allocations: 22667)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-24 14:07:30 +0100
+Processing by ToucsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/toucs_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/index.html.erb:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "toucs" WHERE "toucs"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/toucs/_profile.html.erb:26
+  Rendered toucs/_profile.html.erb (Duration: 4.9ms | Allocations: 1171)
+  Rendered toucs/_form.html.erb (Duration: 6.9ms | Allocations: 3303)
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:16
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  Rendered toucs/_feed.html.erb (Duration: 18.9ms | Allocations: 6795)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 1.4ms | Allocations: 108)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 40.9ms | Allocations: 10110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 155.6ms | Allocations: 19454)
+Completed 200 OK in 186ms (Views: 170.8ms | ActiveRecord: 2.1ms | Allocations: 21938)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-24 14:07:34 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/index.html.erb:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "toucs" WHERE "toucs"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/toucs/_profile.html.erb:26
+  Rendered toucs/_profile.html.erb (Duration: 10.6ms | Allocations: 944)
+  Rendered toucs/_form.html.erb (Duration: 5.6ms | Allocations: 2950)
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:16
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  Rendered toucs/_feed.html.erb (Duration: 17.7ms | Allocations: 5804)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 33.0ms | Allocations: 7950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 144.6ms | Allocations: 17825)
+Completed 200 OK in 147ms (Views: 144.1ms | ActiveRecord: 1.8ms | Allocations: 18413)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-24 14:08:32 +0100
+Started GET "/" for 127.0.0.1 at 2022-03-24 14:08:32 +0100
+  [1m[35m (22.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#index as HTML
+Processing by ToucsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/toucs_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/index.html.erb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/index.html.erb:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "toucs" WHERE "toucs"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/toucs/_profile.html.erb:26
+  Rendered toucs/_profile.html.erb (Duration: 78.3ms | Allocations: 4673)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "toucs" WHERE "toucs"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/toucs/_profile.html.erb:26
+  Rendered toucs/_profile.html.erb (Duration: 82.0ms | Allocations: 5378)
+  Rendered toucs/_form.html.erb (Duration: 154.6ms | Allocations: 17986)
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:16
+  Rendered toucs/_form.html.erb (Duration: 673.7ms | Allocations: 29613)
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  Rendered toucs/_feed.html.erb (Duration: 722.0ms | Allocations: 37641)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  Rendered toucs/_feed.html.erb (Duration: 733.5ms | Allocations: 40013)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 2.1ms | Allocations: 631)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 838.1ms | Allocations: 53065)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 1.0ms | Allocations: 445)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 869.5ms | Allocations: 55969)
+  Rendered layout layouts/application.html.erb (Duration: 1968.8ms | Allocations: 138172)
+Completed 500 Internal Server Error in 2155ms (ActiveRecord: 5.5ms | Allocations: 148882)
+
+
+
+Errno::EACCES - Permission denied @ rb_file_s_rename - (C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/Zp/ZpFkAKGg_hLGW1xF7Mq321UrdyBJlI2uyKvjOJ1bsrQ.cache.19820.21112.880807, C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/Zp/ZpFkAKGg_hLGW1xF7Mq321UrdyBJlI2uyKvjOJ1bsrQ.cache):
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2134.5ms | Allocations: 152365)
+Completed 200 OK in 2294ms (Views: 2148.9ms | ActiveRecord: 2.0ms | Allocations: 162317)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2022-03-24 14:09:09 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (2.2ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", nil], ["updated_at", "2022-03-24 13:09:09.823063"], ["id", 2]]
+  [1m[36mTRANSACTION (65.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 107ms (ActiveRecord: 68.0ms | Allocations: 8190)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-24 14:09:09 +0100
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 5.6ms | Allocations: 113)
+  [1m[36mTouc Load (0.3ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  Rendered toucs/_feed.html.erb (Duration: 9.2ms | Allocations: 2628)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 21.1ms | Allocations: 3347)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 126.6ms | Allocations: 30937)
+Completed 200 OK in 129ms (Views: 127.3ms | ActiveRecord: 0.6ms | Allocations: 31568)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-03-24 14:09:12 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 38.6ms | Allocations: 636)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 161.4ms | Allocations: 11305)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 267.3ms | Allocations: 27103)
+Completed 200 OK in 302ms (Views: 284.9ms | ActiveRecord: 0.0ms | Allocations: 29428)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-03-24 14:09:17 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 124)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 44.0ms | Allocations: 10690)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 126.2ms | Allocations: 19600)
+Completed 200 OK in 151ms (Views: 150.2ms | ActiveRecord: 0.0ms | Allocations: 22021)
+
+
+Started GET "/toucs/new" for 127.0.0.1 at 2022-03-24 14:09:25 +0100
+Processing by ToucsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 298)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-03-24 14:09:25 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 119)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.8ms | Allocations: 8279)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 99.7ms | Allocations: 16945)
+Completed 200 OK in 103ms (Views: 101.4ms | ActiveRecord: 0.0ms | Allocations: 17710)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-03-24 14:09:28 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 119)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 15.9ms | Allocations: 8285)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 97.1ms | Allocations: 17018)
+Completed 200 OK in 99ms (Views: 98.3ms | ActiveRecord: 0.0ms | Allocations: 17729)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-03-24 14:09:31 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"paul.berdo@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "paul.berdo@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (4.5ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", "2022-03-24 13:09:31.736237"], ["updated_at", "2022-03-24 13:09:31.736547"], ["id", 2]]
+  [1m[36mTRANSACTION (128.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/toucs/new
+Completed 302 Found in 517ms (ActiveRecord: 133.4ms | Allocations: 9218)
+
+
+Started GET "/toucs/new" for 127.0.0.1 at 2022-03-24 14:09:31 +0100
+Processing by ToucsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/new.html.erb within layouts/application
+  Rendered toucs/_form.html.erb (Duration: 7.4ms | Allocations: 3181)
+  Rendered toucs/new.html.erb within layouts/application (Duration: 11.4ms | Allocations: 3570)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 109.0ms | Allocations: 13312)
+Completed 200 OK in 118ms (Views: 110.2ms | ActiveRecord: 0.3ms | Allocations: 15572)
+
+
