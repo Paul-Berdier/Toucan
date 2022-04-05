@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e17ddf2-afa5-4b1c-a8f4-8fed5445e5c4" name="Changes" comment="init:gravatar">
+    <list default="true" id="0e17ddf2-afa5-4b1c-a8f4-8fed5445e5c4" name="Changes" comment="fix:html/pages">
+      <change afterPath="$PROJECT_DIR$/config/secrets.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/toucs/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/toucs/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/toucs/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/toucs/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/toucs/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/toucs/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/toucs/_feed.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/toucs/_feed.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,6 +65,8 @@
       <workItem from="1647851851989" duration="107000" />
       <workItem from="1647851987173" duration="4514000" />
       <workItem from="1647938631897" duration="14627000" />
+      <workItem from="1648536192196" duration="9630000" />
+      <workItem from="1649141838961" duration="7436000" />
     </task>
     <task id="LOCAL-00001" summary="webmoncul">
       <created>1647343619468</created>
@@ -213,7 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648112020078</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="fix:html/pages">
+      <created>1648536360120</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1648536360120</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix:html/pages">
+      <created>1648536553110</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1648536553110</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +265,7 @@
     <MESSAGE value="fix:page_acueil navbar" />
     <MESSAGE value="init:profile" />
     <MESSAGE value="init:gravatar" />
-    <option name="LAST_COMMIT_MESSAGE" value="init:gravatar" />
+    <MESSAGE value="fix:html/pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:html/pages" />
   </component>
 </project>
