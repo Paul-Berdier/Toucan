@@ -5936,3 +5936,84 @@ Migrating to CreateLikes (20220405093455)
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-04-12 09:21:39 +0200
+  [1m[35m (11.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/toucs/index.html.erb:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "toucs" WHERE "toucs"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/views/toucs/_profile.html.erb:26
+  Rendered toucs/_profile.html.erb (Duration: 99.3ms | Allocations: 5224)
+  Rendered toucs/_form.html.erb (Duration: 669.6ms | Allocations: 38985)
+  [1m[36mTouc Load (0.5ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:16
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  Rendered toucs/_feed.html.erb (Duration: 737.8ms | Allocations: 50965)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 7.7ms | Allocations: 129)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 913.4ms | Allocations: 64665)
+  Rendered layout layouts/application.html.erb (Duration: 3070.5ms | Allocations: 165797)
+Completed 500 Internal Server Error in 3313ms (ActiveRecord: 4.6ms | Allocations: 176442)
+
+
+
+Errno::EACCES - Permission denied @ apply2files - C:/Users/Utilisateur/Documents/Ecole/Annee_B2/Ruby/toucan/tmp/cache/assets/sprockets/v4.0.0/uS/uSt-cF3m0BZmFTF-arrVAyLP1WFVubKmfpLOel3QPUM.cache.15980.9440.572560:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/5c9ae2db8b39777a/variables" for 127.0.0.1 at 2022-04-12 09:21:43 +0200
+Started GET "/" for 127.0.0.1 at 2022-04-12 09:21:48 +0200
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/toucs/index.html.erb:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "toucs" WHERE "toucs"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/views/toucs/_profile.html.erb:26
+  Rendered toucs/_profile.html.erb (Duration: 4.2ms | Allocations: 1312)
+  Rendered toucs/_form.html.erb (Duration: 4.3ms | Allocations: 3095)
+  [1m[36mTouc Load (0.8ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  Rendered toucs/_feed.html.erb (Duration: 22.4ms | Allocations: 6925)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 41.8ms | Allocations: 10662)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2326.3ms | Allocations: 181286)
+Completed 200 OK in 2329ms (Views: 2325.5ms | ActiveRecord: 2.3ms | Allocations: 182280)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2022-04-12 09:25:08 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 31ms (ActiveRecord: 0.4ms | Allocations: 3521)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-12 09:25:08 +0200
+Processing by ToucsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering toucs/index.html.erb within layouts/application
+  Rendered toucs/_trends.html.erb (Duration: 4.9ms | Allocations: 113)
+  [1m[36mTouc Load (0.4ms)[0m  [1m[34mSELECT "toucs".* FROM "toucs" ORDER BY created_at DESC[0m
+  ↳ app/views/toucs/_feed.html.erb:16
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/toucs/_feed.html.erb:21
+  Rendered toucs/_feed.html.erb (Duration: 13.3ms | Allocations: 2746)
+  Rendered toucs/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered toucs/index.html.erb within layouts/application (Duration: 27.5ms | Allocations: 3465)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 129.5ms | Allocations: 12423)
+Completed 200 OK in 132ms (Views: 129.7ms | ActiveRecord: 1.5ms | Allocations: 13054)
+
+

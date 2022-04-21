@@ -12,9 +12,12 @@
 
 ActiveRecord::Schema.define(version: 2022_04_05_093455) do
 
-  create_table "likes", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  create_table :votes do |t|
+    t.integer :reference_id
+    t.string  :reference_type
+    t.integer :user_id
+    t.integer :value, default: 0
+    t.timestamps null: false
   end
 
   create_table "toucs", force: :cascade do |t|
