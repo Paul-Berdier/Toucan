@@ -1,0 +1,9 @@
+<div class="box cont-<%=message.user.id%>">
+  <div class="msg-<%= message.user.id %>">
+    <% unless message.room.is_private %>
+      <h6 class="title is-5"> <%= message.user.name || message.user.email %> </h6>
+      <h7> <%= message.created_at %> </h7>
+    <% end %>
+    <%= message.body %>
+  </div>
+</div>

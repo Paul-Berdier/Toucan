@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  resources :rooms
-  resources :users
+  resources :rooms do
+    resources :messages
+  end
+  get 'user/:id', to: 'users#show', as: 'user'
   get 'users/show'
   devise_for :users, :controllers => { registrations: 'registrations' }
   resources :toucs

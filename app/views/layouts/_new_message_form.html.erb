@@ -1,0 +1,4 @@
+<%= form_with(model: [@single_room ,@message], remote: true, class: 'field has-addons control') do |f| %>
+  <%= f.text_field :content, id: 'chat-text', class: "msg-content input control", autocomplete: 'off', placeholder: "Enter your message..." %>
+  <%= f.submit data: { disable_with: false }, class: "button is-info control" %>
+<% end %>

@@ -1,0 +1,4 @@
+<%= form_with(model: @room, remote: true, class:'field has-addons control') do |f| %>
+  <%= f.text_field :name, class: 'control', autocomplete: 'off', placeholder: 'Room name' %>
+  <%= f.submit data: {disable_with: false}, class: 'button is-info' %>
+<% end %>
