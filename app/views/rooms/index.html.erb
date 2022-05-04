@@ -2,7 +2,7 @@
   <!-- side panel -->
   <div id="side_panel" class="column is-3 is-narrow" style="width: 350px;">
     <h5 class="block title"> Hi, <%= current_user.name || current_user.email %> ! </h5>
-    <h4 class="title is-4"> Users </h4>
+    <h4 class="title is-4"> Private messages </h4>
     <%= turbo_stream_from "users" %>
     <div id="users" class="block">
       <%= render @users %>
@@ -14,7 +14,7 @@
       <%= render @rooms%>
     </div>
   </div>
-  <!-- actual room -->
+  <!-- selected room -->
   <div id="room_container" class="column">
     <% if @single_room %>
       <div id="single_room">

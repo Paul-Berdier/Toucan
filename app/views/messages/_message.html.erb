@@ -1,9 +1,16 @@
-<div class="box cont-<%=message.user.id%>">
+<div class="message is-link">
   <div class="msg-<%= message.user.id %>">
     <% unless message.room.is_private %>
-      <h6 class="title is-5"> <%= message.user.name || message.user.email %> </h6>
-      <h7> <%= message.created_at %> </h7>
+      <h6 class="title is-5"> <%= message.user.name || message.user.email %>  </h6>
     <% end %>
     <%= message.body %>
   </div>
 </div>
+
+<!-- actual user message style -->
+  <style>
+      <%= ".msg-#{current_user&.id}" %> {
+      
+      color: #007bff !important;
+      }
+  </style>
