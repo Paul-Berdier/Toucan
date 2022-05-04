@@ -14,18 +14,25 @@
       <%= render @rooms%>
     </div>
   </div>
+  <!-- actual user message style -->
+  <style>
+      <%= ".msg-#{current_user&.id}" %> {
+      color: #007bff !important;
+      }
+  </style>
   <!-- selected room -->
   <div id="room_container" class="column">
     <% if @single_room %>
       <div id="single_room">
         <h4 class="title">
-          <%= @user&.email || @single_room.name %> 
+          <%= @user&.name || @user&.email || @single_room.name %> 
         </h4>
         <%= turbo_stream_from @single_room %>
-        <div id="messages" data-controller="scroll">
+        <div id="messages" data-controller="scroll" class="">
           <%= render @messages %>
         </div>
         <%= render partial: 'layouts/new_message_form' %>
+        <p class="help">Be sure to stay respectful.</p>
       </div>
     <% end %>
   </div>
