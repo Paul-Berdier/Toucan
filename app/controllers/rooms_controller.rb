@@ -1,5 +1,5 @@
 class RoomsController < ApplicationController
-  before_action :user_signed_in?
+  before_action :authenticate_user!
   
   def index
     @room = Room.new
