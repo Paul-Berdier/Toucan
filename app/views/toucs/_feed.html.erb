@@ -30,20 +30,26 @@
         <% if user_signed_in? %>
       <nav class="level">
         <div class="level-left is-mobile">
+
           <%= button_to 'Like', touc_likes_path(touc), method: :touc %>
           <%= touc.likes.count %>
+
           <%#= link_to  touc_likes_path(touc), class: "level-item" do %>
 <!--            <span class="icon"><i class="fa fa-thumbs-up" aria-hidden="true"><%#= touc.likes.count %></i></span>-->
           <%# end %>
+
           <%#= link_to touc, class: "level-item" do %>
 <!--            <span class="icon"><i class="fa fa-link" aria-hidden="true"></i></span>-->
           <%# end %>
+
           <%= link_to edit_touc_path(touc), class: "level-item" do %>
             <span class="icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
           <% end %>
+
           <%= link_to touc, method: :delete, data: { confirm: "Are you sure you want to delete this touc ?"} do %>
             <span class="icon"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
           <% end %>
+
         </div>
         <% end %>
       </nav>

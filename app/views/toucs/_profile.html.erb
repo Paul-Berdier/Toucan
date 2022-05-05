@@ -29,13 +29,19 @@
         <div class="level-item has-centered-text">
           <div>
             <p class="heading">Following</p>
-            <p class="title is-6">123</p>
+            <p class="title is-6"><%= current_user.following.count %></p>
           </div>
         </div>
         <div class="level-item has-centered-text">
           <div>
             <p class="heading">Followers</p>
-            <p class="title is-6">465k</p>
+            <p class="title is-6"><%= current_user.followers.count %></p>
+          </div>
+        </div>
+        <div class="level-item has-centered-text">
+          <div>
+            <p><%= link_to 'Follow', user_relationships_path(current_user), methode: :post, class: "btn btn-danger" unless @rel.present? %>
+              <%= link_to 'Unfollow', relationship_path(@rel.id), methode: :delete, class: "btn btn-danger" if @rel.present? %></p>
           </div>
         </div>
       </div>
