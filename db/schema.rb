@@ -38,11 +38,21 @@ ActiveRecord::Schema.define(version: 2022_05_04_122617) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+
   create_table "toucs", force: :cascade do |t|
     t.text "touc"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id"
+  end
+
+  create_table "likes", force: :cascade do |t|
+    t.integer "touc_id", null: false
+    t.integer "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["touc_id"], name: "index_likes_on_touc_id"
+    t.index ["user_id"], name: "index_likes_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -64,4 +74,6 @@ ActiveRecord::Schema.define(version: 2022_05_04_122617) do
   add_foreign_key "messages", "users"
   add_foreign_key "participants", "rooms"
   add_foreign_key "participants", "users"
+  add_foreign_key "likes", "toucs"
+  add_foreign_key "likes", "users"
 end
